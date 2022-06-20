@@ -6,6 +6,7 @@
 }
 
 .about__section__mono__slab {
+  height: 415px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,7 +14,7 @@
 }
 
 .about__mono__slab__content {
-  padding: 95px;
+  /* padding: 95px; */
   text-align: left;
   border: 1px solid red;
   display: flex;

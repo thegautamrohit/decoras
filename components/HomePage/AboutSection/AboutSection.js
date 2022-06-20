@@ -17,7 +17,7 @@ function AboutSection() {
           <Button title="Read More" />
         </div>
         <div className="about__mono__slab__image">
-          <Image src={About} layout="intrinsic" />
+          <Image src={About} layout="responsive" />
         </div>
       </div>
       <div className="about__section__mono__slab">
