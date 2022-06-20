@@ -13,7 +13,7 @@ function Header({ children, href }) {
           <a
             style={
               router.asPath === "/"
-                ? { color: "var(--black)" }
+                ? { color: "var(--black)", fontWeight: "600" }
                 : { color: "var(--beige)", textDecoration: "none" }
             }
           >
@@ -24,7 +24,7 @@ function Header({ children, href }) {
           <a
             style={
               router.asPath === "/our-collection"
-                ? { color: "var(--black)" }
+                ? { color: "var(--black)", fontWeight: "600" }
                 : { color: "var(--beige)", textDecoration: "none" }
             }
           >
@@ -35,7 +35,7 @@ function Header({ children, href }) {
           <a
             style={
               router.asPath === "/about-us"
-                ? { color: "var(--black)" }
+                ? { color: "var(--black)", fontWeight: "600" }
                 : { color: "var(--beige)", textDecoration: "none" }
             }
           >
@@ -46,7 +46,7 @@ function Header({ children, href }) {
           <a
             style={
               router.asPath === "/contact-us"
-                ? { color: "var(--black)" }
+                ? { color: "var(--black)", fontWeight: "600" }
                 : { color: "var(--beige)", textDecoration: "none" }
             }
           >
