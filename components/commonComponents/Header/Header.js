@@ -14,7 +14,7 @@ function Header({ children, href }) {
             style={
               router.asPath === "/"
                 ? { color: "var(--black)" }
-                : { color: "var(--beige)" }
+                : { color: "var(--beige)", textDecoration: "none" }
             }
           >
             Home
@@ -23,9 +23,9 @@ function Header({ children, href }) {
         <Link href="/our-collection">
           <a
             style={
-              router.asPath === "/"
+              router.asPath === "/our-collection"
                 ? { color: "var(--black)" }
-                : { color: "var(--beige)" }
+                : { color: "var(--beige)", textDecoration: "none" }
             }
           >
             Our Collection
@@ -34,9 +34,9 @@ function Header({ children, href }) {
         <Link href="/about-us">
           <a
             style={
-              router.asPath === "/"
+              router.asPath === "/about-us"
                 ? { color: "var(--black)" }
-                : { color: "var(--beige)" }
+                : { color: "var(--beige)", textDecoration: "none" }
             }
           >
             About Us
@@ -45,9 +45,9 @@ function Header({ children, href }) {
         <Link href="/contact-us">
           <a
             style={
-              router.asPath === "/"
+              router.asPath === "/contact-us"
                 ? { color: "var(--black)" }
-                : { color: "var(--beige)" }
+                : { color: "var(--beige)", textDecoration: "none" }
             }
           >
             Contact Us
