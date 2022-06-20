@@ -2,10 +2,18 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../../Assets/Logo/DecorasLogo.png";
-import { BsArrowUpCircleFill, BsInstagram } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import Scroll from "../../../Assets/misc/scrollTop.png";
+import { BsWhatsapp, BsInstagram } from "react-icons/bs";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 function Footer() {
+  const router = useRouter();
+
+  const scrollTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <footer className="footer__container">
       <div className="footer__top__bar">
@@ -13,42 +21,92 @@ function Footer() {
           <Image
             src={Logo}
             className="footer__decoras__icon__image"
-            layout="fill"
+            layout="intrinsic"
+            width={130}
+            height={44}
           />
         </div>
 
-        <div className="footer__scroll__top">
-          <BsArrowUpCircleFill size={50} />
+        <div className="footer__scroll__top" onClick={() => scrollTop()}>
+          <Image src={Scroll} height={50} width={50} />
         </div>
       </div>
 
       <div className="footer__middle__bar">
         <Link href="/">
-          <a>Home</a>
+          <a
+            className={
+              router.pathname == "/"
+                ? "active__footer__link"
+                : "inactive__footer__link"
+            }
+          >
+            Home
+          </a>
         </Link>
         <Link href="/">
-          <a>Collections</a>
+          <a
+            className={
+              router.pathname == "/collections"
+                ? "active__footer__link"
+                : "inactive__footer__link"
+            }
+          >
+            Collections
+          </a>
         </Link>
         <Link href="/about-us">
-          <a>About us</a>
+          <a
+            className={
+              router.pathname == "/about-us"
+                ? "active__footer__link"
+                : "inactive__footer__link"
+            }
+          >
+            About Us
+          </a>
         </Link>
         <Link href="/contact-us">
-          <a>Contact us</a>
+          <a
+            className={
+              router.pathname == "/contact-us"
+                ? "active__footer__link"
+                : "inactive__footer__link"
+            }
+          >
+            Contact Us
+          </a>
         </Link>
       </div>
 
       <div className="footer__bottom__bar">
         <div className="footer__social_icons">
-          <Link href="/">
-            <a>
-              <FaFacebookF />
+          <Link className="footer__social__mono__link" href="/">
+            <a className="footer__social__mono__link">
+              <FaFacebookF color="#23332F" />
             </a>
           </Link>
-          <Link href="/">
-            <a>
-              <BsInstagram />
+          <Link className="footer__social__mono__link" href="/">
+            <a className="footer__social__mono__link">
+              <BsInstagram color="#23332F" />
             </a>
           </Link>
+          <Link className="footer__social__mono__link" href="/">
+            <a className="footer__social__mono__link">
+              <BsWhatsapp color="#23332F" />
+            </a>
+          </Link>
+          <Link className="footer__social__mono__link" href="/">
+            <a className="footer__social__mono__link">
+              <FaLinkedinIn color="#23332F" />
+            </a>
+          </Link>
+        </div>
+
+        <div className="footer__disclaimer__bar">
+          <p>Disclaimer</p>
+          <p>Privacy Policy</p>
+          <p>2022 Decoras</p>
         </div>
       </div>
     </footer>
