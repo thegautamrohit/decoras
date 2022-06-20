@@ -6,10 +6,10 @@
   box-sizing: border-box;
   --raleway: "Raleway", sans-serif;
   --lato: "Lato", sans-serif;
-  --green: "#23332F";
-  --beige: "#DEBC90";
-  --black: "#1D1D1B";
-  --grey: "#6C6C6C";
+  --green: #23332f;
+  --beige: #debc90;
+  --black: #1d1d1b;
+  --grey: #6c6c6c;
 }
 
 h1 {
