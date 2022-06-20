@@ -5,4 +5,18 @@
   background: var(--green) 0% 0% no-repeat padding-box;
   border-radius: 1px;
   opacity: 1;
+
+  color: var(--beige);
+  font-size: 16px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.button:focus {
+  outline: 0;
+  border: 0;
 }

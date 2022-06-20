@@ -4,6 +4,7 @@ import "../styles/Button.css";
 import "../styles/Header.css";
 
 import "../styles/Footer.css";
+import "../styles/AboutSection.css";
 
 function MyApp({ Component, pageProps }) {
   return (
