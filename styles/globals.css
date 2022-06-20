@@ -1,16 +1,33 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap");
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  --raleway: "Raleway", sans-serif;
+  --lato: "Lato", sans-serif;
+  --green: "#23332F";
+  --beige: "#DEBC90";
+  --black: "#1D1D1B";
+  --grey: "#6C6C6C";
+}
+
+h1 {
+  font-size: 32px;
+  font-family: var(--raleway);
+}
+
+p {
+  font-size: 20px;
+  font-family: var(--lato);
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }
