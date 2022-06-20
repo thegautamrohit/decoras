@@ -1,0 +1,8 @@
+.button {
+  width: 160px;
+  height: 48px;
+
+  background: var(--green) 0% 0% no-repeat padding-box;
+  border-radius: 1px;
+  opacity: 1;
+}
