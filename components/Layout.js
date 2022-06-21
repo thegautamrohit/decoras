@@ -5,7 +5,7 @@ import Footer from "./commonComponents/Footer/Footer";
 function Layout({ children }) {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       {children}
       <Footer />
     </>
