@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { GrNext, GrPrevious } from "react-icons/gr";
 export const CarouselItem = ({ children }) => {
-  return <div className="natural__carousal__image__single">{children}</div>;
+  return <>{children}</>;
 };
 
 const Carousel = ({ children, details }) => {
@@ -37,16 +37,16 @@ const Carousel = ({ children, details }) => {
           onMouseLeave={() => setPaused(false)}
         >
           <div
-            className="inner"
+            className="carousel__inner"
             style={{
               transform: `translateX(-${
-                310 * activeIndex + 1 * activeIndex
+                1240 * activeIndex + 1 * activeIndex
               }px)`,
             }}
           >
             {data.map((child, index) => {
               return (
-                <div className="natural__carousal__image__single">{child}</div>
+                <div className="natural__carousal__image__single__slide">{child}</div>
               );
             })}
           </div>

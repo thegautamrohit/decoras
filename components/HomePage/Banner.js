@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel, { CarouselItem } from "../commonComponents/Carousal/Caraousal";
 import BannerImage from "../../Assets/Banner/luxury-modern-dark-living-room-interior@2x.png";
+import Image from "next/image";
 
 const data = [
   {
@@ -39,7 +40,12 @@ const Banner = () => {
         {data?.map((item, index) => {
           return (
             <CarouselItem key={index}>
-              <img src={item.image} />
+              <Image
+                src={item.image}
+                layout="fixed"
+                width={1289}
+                height={500}
+              />
             </CarouselItem>
           );
         })}
