@@ -12,8 +12,7 @@
   --grey: #6c6c6c;
 }
 
-html {
-  max-width: 2000px !important;
+body {
 }
 
 h1 {
@@ -24,6 +23,21 @@ h1 {
 p {
   font-size: 20px;
   font-family: var(--lato);
+}
+
+.homepage__banner {
+  overflow: hidden;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.homepage__global {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 2000px !important;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {

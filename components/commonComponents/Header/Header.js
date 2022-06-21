@@ -7,7 +7,7 @@ function Header({ children, href }) {
   const router = useRouter();
 
   return (
-    <div className="main__header">
+    <header className="main__header">
       <div className="main__header__link">
         <Link href="/">
           <a
@@ -58,7 +58,7 @@ function Header({ children, href }) {
         <Image layout="intrinsic" src={Logo} />
       </div>
       <div className=""></div>
-    </div>
+    </header>
   );
 }
 

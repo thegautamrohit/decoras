@@ -1,24 +1,27 @@
-.carousel_natural {
-  width: 95%;
+.carousel {
+  width: 100%;
   margin: 0 auto;
 
-  background-color: #fafafa;
+  overflow: hidden;
 }
 
 .carousel__inner {
   display: flex;
   width: 100vw;
-  gap: 41px;
+  gap: 48px;
   transition: transform 0.3s;
 }
 
-.natural__carousal__container__desk {
+.natural__carousal__container__desktop {
   width: 100%;
 }
 
 .natural__carousal__image__single__slide {
   height: 574px;
   width: 1248px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .natural__carousal__image__single__slide > h4 {
