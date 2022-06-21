@@ -1,10 +1,11 @@
 import React from "react";
-import HomePage from "../components/HomePage/HomePage";
-
+import AboutSection from "../components/HomePage/AboutSection";
+import Banner from "../components/HomePage/Banner";
 function index() {
   return (
     <>
-      <HomePage />
+      {/* <Banner /> */}
+      <AboutSection />
     </>
   );
 }

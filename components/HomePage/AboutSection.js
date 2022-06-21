@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import About from "../../../Assets/Homepage/About/about.png";
-import Mission from "../../../Assets/Homepage/About/mission.png";
-import Button from "../../commonComponents/Button/Button";
+import About from "../../Assets/Homepage/About/about.png";
+import Mission from "../../Assets/Homepage/About/mission.png";
+import Button from "../commonComponents/Button/Button";
 
 function AboutSection() {
   return (
@@ -17,7 +17,13 @@ function AboutSection() {
           <Button title="Read More" />
         </div>
         <div className="about__mono__slab__image">
-          <Image src={About} layout="responsive" />
+          <Image
+            src={About}
+            className="about__mono__slab__image__img"
+            height={414}
+            width={719}
+            layout="fill"
+          />
         </div>
       </div>
       <div className="about__section__mono__slab">
@@ -31,7 +37,13 @@ function AboutSection() {
           <Button title="Read More" />
         </div>
         <div className="about__mono__slab__image">
-          <Image src={Mission} layout="intrinsic" />
+          <Image
+            src={Mission}
+            className="about__mono__slab__image__img"
+            height={414}
+            width={719}
+            layout="fill"
+          />
         </div>
       </div>
     </div>
