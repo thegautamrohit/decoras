@@ -27,6 +27,8 @@ const Carousel = ({ children, details }) => {
     setData([...children]);
   }, []);
 
+  console.log(details);
+
   return (
     <>
       <div className="natural__carousal__container__desktop">
@@ -46,31 +48,13 @@ const Carousel = ({ children, details }) => {
           >
             {data.map((child, index) => {
               return (
-                <div className="natural__carousal__image__single__slide">{child}</div>
+                <div className="natural__carousal__image__single__slide">
+                  {child}
+                </div>
               );
             })}
           </div>
-          <div className="natural__carousal__arrow">
-            {activeIndex > 0 && (
-              <div
-                className="natural__carousal__arrow__left"
-                onClick={() => {
-                  leftSlide(activeIndex - 1);
-                }}
-              >
-                <GrPrevious color="white" />
-              </div>
-            )}
-
-            <div
-              className="natural__carousal__arrow__right"
-              onClick={() => {
-                rightSlide(activeIndex + 1);
-              }}
-            >
-              <GrNext color="white" style={{ color: "white" }} />
-            </div>
-          </div>
+          <div className="natural__carousal__arrow"></div>
         </div>
       </div>
       <div className="natural__carousal__container__mobile">

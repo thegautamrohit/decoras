@@ -36,38 +36,6 @@
   width: 100%;
 }
 
-.arrow_natural {
-  align-items: center;
-  background: #ffffff33 0 0 no-repeat padding-box;
-  border: 2px solid #ddd5c9;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex !important;
-  font-size: 2em;
-  height: 50px;
-  justify-content: center;
-  line-height: 30px;
-  opacity: 1;
-  position: absolute;
-  text-align: center;
-  top: 45%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  transition: all 0.5s;
-  width: 50px;
-  z-index: 4;
-}
-
-.arrow_natural > svg > polyline {
-  stroke: #fff;
-}
-.arrow-right_natural {
-  right: 8%;
-}
-.arrow-left_natural {
-  left: 2%;
-}
-
 @media screen and (min-width: 768px) {
   .natural__carousal__container__mobile {
     display: none;

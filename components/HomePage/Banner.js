@@ -36,7 +36,7 @@ const data = [
 const Banner = () => {
   return (
     <div className="homepage__banner">
-      <Carousel title="Homepage">
+      <Carousel title="Homepage" details={data}>
         {data?.map((item, index) => {
           return (
             <CarouselItem key={index}>
@@ -45,7 +45,7 @@ const Banner = () => {
                 layout="fixed"
                 width={1248}
                 height={574}
-                objectFit = ""
+                objectFit=""
               />
             </CarouselItem>
           );
