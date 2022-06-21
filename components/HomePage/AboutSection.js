@@ -43,6 +43,8 @@ function AboutSection() {
             height={414}
             width={719}
             layout="fill"
+            objectFit="cover"
+            quality={100}
           />
         </div>
       </div>
