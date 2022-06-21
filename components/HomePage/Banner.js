@@ -45,7 +45,6 @@ const Banner = () => {
                 layout="fixed"
                 width={1248}
                 height={574}
-                objectFit = ""
               />
             </CarouselItem>
           );
