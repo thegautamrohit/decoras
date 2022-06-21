@@ -1,7 +1,13 @@
 import React from "react";
+import dynamic from "next/dynamic";
+const AboutSection = dynamic(() => import("./AboutSection/AboutSection"));
 
 function HomePage() {
-  return <div>HomePage</div>;
+  return (
+    <>
+      <AboutSection />
+    </>
+  );
 }
 
 export default HomePage;

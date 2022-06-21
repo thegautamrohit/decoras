@@ -12,6 +12,10 @@
   --grey: #6c6c6c;
 }
 
+html {
+  max-width: 2000px !important;
+}
+
 h1 {
   font-size: 32px;
   font-family: var(--raleway);
