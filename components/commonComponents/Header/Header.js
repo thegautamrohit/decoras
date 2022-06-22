@@ -115,7 +115,7 @@ function Header({ children, href }) {
               Home
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/collections">
             <a
               className={
                 router.asPath === "/collections"
