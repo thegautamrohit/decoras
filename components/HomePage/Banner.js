@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel, { CarouselItem } from "../commonComponents/Carousal/Caraousal";
 import BannerImage from "../../Assets/Banner/luxury-modern-dark-living-room-interior@2x.png";
 import Image from "next/image";
@@ -34,18 +34,19 @@ const data = [
   },
 ];
 const Banner = () => {
+  const [bannerIndex, setBannerIndex] = useState(0);
   return (
     <div className="homepage__banner">
-      <Carousel title="Homepage" details={data}>
+      <Carousel title="Homepage" details={data} Index={bannerIndex}>
         {data?.map((item, index) => {
           return (
             <CarouselItem key={index}>
               <Image
                 src={item.image}
                 layout="fixed"
-                width={1248}
+                width={1548}
                 height={574}
-                objectFit=""
+                onClick={() => console.log(index)}
               />
             </CarouselItem>
           );

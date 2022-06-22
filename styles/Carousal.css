@@ -14,11 +14,11 @@
 
 .natural__carousal__container__desktop {
   width: 100%;
+  position: relative;
 }
 
 .natural__carousal__image__single__slide {
-  height: 574px;
-  width: 1248px;
+  width: 85%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,4 +61,32 @@
     /* border: 1px solid red; */
     padding: 0 20px;
   }
+}
+
+.banner__scroll__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+
+  position: absolute;
+  top: 87%;
+  left: 37%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.banner__scroll {
+  width: 10px;
+  height: 10px;
+  background: #cdcdcd 0% 0% no-repeat padding-box;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.active__banner__scroll {
+  width: 11px;
+  height: 10px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  cursor: pointer;
 }
