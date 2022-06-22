@@ -46,7 +46,6 @@ const Banner = () => {
                 layout="fixed"
                 width={1548}
                 height={574}
-                onClick={() => console.log(index)}
               />
             </CarouselItem>
           );

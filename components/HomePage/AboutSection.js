@@ -20,8 +20,8 @@ function AboutSection() {
           <Image
             src={About}
             className="about__mono__slab__image__img"
-            height={414}
-            width={719}
+            // height={414}
+            // width={719}
             layout="fill"
           />
         </div>
@@ -40,11 +40,11 @@ function AboutSection() {
           <Image
             src={Mission}
             className="about__mono__slab__image__img"
-            height={414}
-            width={719}
+            // height={414}
+            // width={719}
             layout="fill"
-            objectFit="cover"
-            quality={100}
+            // objectFit="cover"
+            // quality={100}
           />
         </div>
       </div>
