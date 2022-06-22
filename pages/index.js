@@ -5,8 +5,8 @@ import Collections from "../components/HomePage/Collection/Collections";
 function index() {
   return (
     <div className="homepage__global">
-      <Banner />
-      <Collections />
+      {/* <Banner />
+      <Collections /> */}
       <AboutSection />
     </div>
   );

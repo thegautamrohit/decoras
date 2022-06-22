@@ -40,7 +40,7 @@ const Carousel = ({ children, details }) => {
             className="carousel__inner"
             style={{
               transform: `translateX(-${
-                1240 * activeIndex + 1 * activeIndex
+                272 * activeIndex + 1 * activeIndex
               }px)`,
             }}
           >
