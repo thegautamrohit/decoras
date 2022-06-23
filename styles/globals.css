@@ -25,12 +25,7 @@ p {
   font-family: var(--lato);
 }
 
-.homepage__banner {
-  overflow: hidden;
-  margin-top: 40px;
-  width: 100%;
-  margin-left: 184px;
-}
+
 
 .homepage__global {
   display: flex;

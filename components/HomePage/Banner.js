@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Carousel, { CarouselItem } from "../commonComponents/Carousal/Caraousal";
 import BannerImage from "../../Assets/Banner/luxury-modern-dark-living-room-interior@2x.png";
 import Image from "next/image";
+import Button from "../commonComponents/Button/Button";
 
 const data = [
   {
@@ -41,12 +42,22 @@ const Banner = () => {
         {data?.map((item, index) => {
           return (
             <CarouselItem key={index}>
-              <Image
-                src={item.image}
-                layout="fixed"
-                width={1548}
-                height={574}
-              />
+              <>
+                <Image
+                  src={item.image}
+                  layout="fixed"
+                  width={1548}
+                  height={574}
+                />
+                <div className="carousel__caption">
+                  <h1>WE LOVE INTERIORS</h1>
+                  <h3>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy e
+                  </h3>
+                  <Button title={"Explore"} />
+                </div>
+              </>
             </CarouselItem>
           );
         })}
