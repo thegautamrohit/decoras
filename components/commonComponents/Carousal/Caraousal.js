@@ -5,6 +5,15 @@ export const CarouselItem = ({ children }) => {
 };
 
 const Carousel = ({ children, details }) => {
+  useEffect(() => {
+    // setInterval(() => {
+    //   if (activeIndex < details.length) {
+    //     console.log(activeIndex, "children");
+    //     setActiveIndex((prev) => prev + 1);
+    //   }
+    // }, 5000);
+  }, []);
+
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const [data, setData] = useState([]);
@@ -40,36 +49,35 @@ const Carousel = ({ children, details }) => {
             className="carousel__inner"
             style={{
               transform: `translateX(-${
-                1240 * activeIndex + 1 * activeIndex
+                (window.innerWidth - 160) * activeIndex + 1 * activeIndex
               }px)`,
             }}
           >
             {data.map((child, index) => {
               return (
-                <div className="natural__carousal__image__single__slide">{child}</div>
+                <div
+                  className="natural__carousal__image__single__slide"
+                  key={index}
+                >
+                  {child}
+                </div>
               );
             })}
           </div>
-          <div className="natural__carousal__arrow">
-            {activeIndex > 0 && (
-              <div
-                className="natural__carousal__arrow__left"
-                onClick={() => {
-                  leftSlide(activeIndex - 1);
-                }}
-              >
-                <GrPrevious color="white" />
-              </div>
-            )}
-
-            <div
-              className="natural__carousal__arrow__right"
-              onClick={() => {
-                rightSlide(activeIndex + 1);
-              }}
-            >
-              <GrNext color="white" style={{ color: "white" }} />
-            </div>
+          <div className="banner__scroll__container">
+            {details.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  className={
+                    activeIndex === index
+                      ? "active__banner__scroll"
+                      : "banner__scroll"
+                  }
+                  onClick={() => setActiveIndex(index)}
+                ></div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -90,7 +98,9 @@ const Carousel = ({ children, details }) => {
           >
             {data.map((child, index) => {
               return (
-                <div className="natural__carousal__image__single">{child}</div>
+                <div key={index} className="natural__carousal__image__single">
+                  {child}
+                </div>
               );
             })}
           </div>
