@@ -75,7 +75,7 @@ function Header({ children, href }) {
           </Link>
         </div>
         <div className="main__header__logo">
-          <Image layout="intrinsic" src={Logo} />
+          <Image alt="Decoras" layout="intrinsic" src={Logo} />
         </div>
         <div className=""></div>
       </header>
@@ -92,7 +92,7 @@ function Header({ children, href }) {
           Close
         </div>
         <div className="header__logo__mob">
-          <Image layout="intrinsic" src={Logo} />
+          <Image alt="Decoras" layout="intrinsic" src={Logo} />
         </div>
 
         <div

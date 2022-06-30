@@ -46,7 +46,10 @@ const Carousel = ({ children, details }) => {
           >
             {data.map((child, index) => {
               return (
-                <div className="collection__carousal__image__single__slide">
+                <div
+                  key={index}
+                  className="collection__carousal__image__single__slide"
+                >
                   {child}
                 </div>
               );
@@ -92,7 +95,10 @@ const Carousel = ({ children, details }) => {
           >
             {data.map((child, index) => {
               return (
-                <div className="collection__carousal__image__single">
+                <div
+                  key={index}
+                  className="collection__carousal__image__single"
+                >
                   {child}
                 </div>
               );

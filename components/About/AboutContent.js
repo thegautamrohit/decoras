@@ -9,12 +9,36 @@ function AboutContent() {
       <div className="about__content__space__container">
         <div className="about__content__image__bar">
           <div className="about_content__image__sub_1">
-            <Image src={About1} width={327} height={254} layout="fixed" />
-            <Image src={About1} width={251} height={160} layout="fixed" />
+            <Image
+              alt="Decoras"
+              src={About1}
+              width={327}
+              height={254}
+              layout="fixed"
+            />
+            <Image
+              alt="Decoras"
+              src={About1}
+              width={251}
+              height={160}
+              layout="fixed"
+            />
           </div>
           <div className="about_content__image__sub_2">
-            <Image src={About1} width={251} height={169} layout="fixed" />
-            <Image src={About1} width={327} height={263} layout="fixed" />
+            <Image
+              alt="Decoras"
+              src={About1}
+              width={251}
+              height={169}
+              layout="fixed"
+            />
+            <Image
+              alt="Decoras"
+              src={About1}
+              width={327}
+              height={263}
+              layout="fixed"
+            />
           </div>
         </div>
 
@@ -43,7 +67,13 @@ function AboutContent() {
         <div className="about__content__content">
           <h1>OUR MISSION</h1>
           <div className="about__mission__mob__image">
-            <Image src={About1} height={351} width={600} layout="responsive" />
+            <Image
+              alt="Decoras"
+              src={About1}
+              height={351}
+              width={600}
+              layout="responsive"
+            />
           </div>
           <p>
             We believe that healthy ideas flourish in an healthy environment,
@@ -53,7 +83,13 @@ function AboutContent() {
           </p>
         </div>
         <div className="about__content__image">
-          <Image src={About1} height={351} width={600} layout="responsive" />
+          <Image
+            alt="Decoras"
+            src={About1}
+            height={351}
+            width={600}
+            layout="responsive"
+          />
         </div>
       </div>
     </>

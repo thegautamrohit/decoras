@@ -89,7 +89,13 @@ function Collections() {
                   backgroundColor: `${item.color}`,
                 }}
               >
-                <Image src={item.img} layout="fixed" height={200} width={180} />
+                <Image
+                  alt="Decoras"
+                  src={item.img}
+                  layout="fixed"
+                  height={200}
+                  width={180}
+                />
 
                 <div className="our__collection__card__name">
                   <p>{item?.name}</p>

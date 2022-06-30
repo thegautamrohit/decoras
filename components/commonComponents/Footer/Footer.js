@@ -23,6 +23,7 @@ function Footer() {
       <div className="footer__top__bar">
         <div className="footer__decoras__icon">
           <Image
+            alt="Decoras"
             src={Logo}
             className="footer__decoras__icon__image"
             layout="intrinsic"
@@ -32,7 +33,7 @@ function Footer() {
         </div>
 
         <div className="footer__scroll__top" onClick={() => scrollTop()}>
-          <Image src={Scroll} height={50} width={50} />
+          <Image alt="Decoras" src={Scroll} height={50} width={50} />
         </div>
       </div>
 

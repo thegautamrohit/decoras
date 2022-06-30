@@ -18,6 +18,7 @@ function AboutSection() {
         </div>
         <div className="about__mono__slab__image">
           <Image
+            alt="Decoras"
             src={About}
             className="about__mono__slab__image__img"
             // height={414}
@@ -38,6 +39,7 @@ function AboutSection() {
         </div>
         <div className="about__mono__slab__image">
           <Image
+            alt="Decoras"
             src={Mission}
             className="about__mono__slab__image__img"
             // height={414}
