@@ -9,6 +9,7 @@ import "../styles/OurCollection.css";
 import "../styles/CollectionCarousel.css";
 import "../styles/CommonBanner.css";
 import "../styles/AboutContent.css";
+import "../styles/ContactSection.css";
 import "../styles/Banner.css";
 function MyApp({ Component, pageProps }) {
   return (
