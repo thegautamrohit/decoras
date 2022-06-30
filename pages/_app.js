@@ -6,6 +6,9 @@ import "../styles/Carousal.css";
 import "../styles/Footer.css";
 import "../styles/AboutSection.css";
 import "../styles/OurCollection.css";
+import "../styles/CollectionCarousel.css";
+import "../styles/CommonBanner.css";
+import "../styles/AboutContent.css";
 import "../styles/Banner.css";
 function MyApp({ Component, pageProps }) {
   return (

@@ -1,0 +1,127 @@
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+.collection__carousel__inner {
+  display: flex;
+  width: 100vw;
+  gap: 48px;
+  transition: transform 0.3s;
+}
+
+.collection__carousal__container__desktop {
+  width: 100%;
+  position: relative;
+}
+
+.collection__carousal__image__single__slide {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection__carousal__image__single__slide > h4 {
+  font-size: 20px;
+  color: #6c6c6c;
+  font-family: var(--playfair-text);
+  margin: 23px 0 0 0;
+}
+
+.collection__carousal__image__single__slide > img {
+  height: 100%;
+  width: 100%;
+}
+
+.collection__carousal__arrow {
+  border: 1px solid red;
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+.collection__carousal__arrow__left {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8%;
+  cursor: pointer;
+  border: 2px solid #6c6c6c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection__carousal__arrow__right {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8%;
+  cursor: pointer;
+  border: 2px solid #6c6c6c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .collection__carousal__container__mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .arrow_natural {
+    height: 33px;
+    width: 33px;
+  }
+
+  .collection__carousal__image__single__slide {
+    width: 250px;
+    height: 327px;
+    /* border: 1px solid red; */
+    padding: 0 20px;
+  }
+}
+
+.banner__scroll__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+
+  position: absolute;
+  top: 87%;
+  left: 37%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.banner__scroll {
+  width: 10px;
+  height: 10px;
+  background: #cdcdcd 0% 0% no-repeat padding-box;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.active__banner__scroll {
+  width: 11px;
+  height: 10px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  cursor: pointer;
+}

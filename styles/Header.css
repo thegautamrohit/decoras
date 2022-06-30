@@ -6,7 +6,11 @@
   height: 100px;
   box-shadow: 2px 2px 20px #82828214;
   background: #ffffff 0% 0% no-repeat padding-box;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .main__header__link {

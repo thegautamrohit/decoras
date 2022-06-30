@@ -74,7 +74,7 @@ function Collections() {
     <div className="our__collection__container">
       <div className="our__collection__top__bar">
         <div className="our__collection__top__bar__head">
-          <h1>OUR COLLLECTIONS</h1>
+          <h1>OUR COLLECTIONS</h1>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
         </div>
         <Button title={"View All"} />

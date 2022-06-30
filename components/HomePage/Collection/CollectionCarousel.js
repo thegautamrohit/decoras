@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { GrNext, GrPrevious } from "react-icons/gr";
+import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 export const CarouselItem = ({ children }) => {
   return <>{children}</>;
 };
@@ -29,7 +29,7 @@ const Carousel = ({ children, details }) => {
 
   return (
     <>
-      <div className="natural__carousal__container__desktop">
+      <div className="collection__carousal__container__desktop">
         <div
           //   {...handlers}
           className="carousel"
@@ -37,7 +37,7 @@ const Carousel = ({ children, details }) => {
           onMouseLeave={() => setPaused(false)}
         >
           <div
-            className="carousel__inner"
+            className="collection__carousel__inner"
             style={{
               transform: `translateX(-${
                 272 * activeIndex + 1 * activeIndex
@@ -46,36 +46,36 @@ const Carousel = ({ children, details }) => {
           >
             {data.map((child, index) => {
               return (
-                <div className="natural__carousal__image__single__slide">
+                <div className="collection__carousal__image__single__slide">
                   {child}
                 </div>
               );
             })}
           </div>
-          <div className="natural__carousal__arrow">
+          <div className="collection__carousal__arrow">
             {activeIndex > 0 && (
               <div
-                className="natural__carousal__arrow__left"
+                className="collection__carousal__arrow__left"
                 onClick={() => {
                   leftSlide(activeIndex - 1);
                 }}
               >
-                <GrPrevious color="white" />
+                <BsArrowLeft color="#6c6c6c" />
               </div>
             )}
 
             <div
-              className="natural__carousal__arrow__right"
+              className="collection__carousal__arrow__right"
               onClick={() => {
                 rightSlide(activeIndex + 1);
               }}
             >
-              <GrNext color="white" style={{ color: "white" }} />
+              <BsArrowRight color="#6c6c6c" style={{ color: "#6c6c6c" }} />
             </div>
           </div>
         </div>
       </div>
-      <div className="natural__carousal__container__mobile">
+      <div className="collection__carousal__container__mobile">
         <div
           // {...handlers}
           className="carousel"
@@ -92,30 +92,32 @@ const Carousel = ({ children, details }) => {
           >
             {data.map((child, index) => {
               return (
-                <div className="natural__carousal__image__single">{child}</div>
+                <div className="collection__carousal__image__single">
+                  {child}
+                </div>
               );
             })}
           </div>
 
-          <div className="natural__carousal__arrow__mobile">
+          <div className="collection__carousal__arrow__mobile">
             {activeIndex > 0 && (
               <div
-                className="natural__carousal__arrow__left"
+                className="collection__carousal__arrow__left"
                 onClick={() => {
                   leftSlide(activeIndex - 1);
                 }}
               >
-                <GrPrevious color="white" />
+                <BsArrowLeft color="#6c6c6c" />
               </div>
             )}
 
             <div
-              className="natural__carousal__arrow__right"
+              className="collection__carousal__arrow__right"
               onClick={() => {
                 rightSlide(activeIndex + 1);
               }}
             >
-              <GrNext color="white" style={{ color: "white" }} />
+              <BsArrowRight color="#6c6c6c" style={{ color: "#6c6c6c" }} />
             </div>
           </div>
         </div>
