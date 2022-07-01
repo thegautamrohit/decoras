@@ -1,0 +1,99 @@
+import Image from "next/image";
+import About1 from "../../Assets/Banner/luxury-modern-dark-living-room-interior@2x.png";
+import React from "react";
+
+function AboutContent() {
+  return (
+    <>
+      <h1 className="about__content__head__text">CREATE A SPACE YOU LOVE</h1>
+      <div className="about__content__space__container">
+        <div className="about__content__image__bar">
+          <div className="about_content__image__sub_1">
+            <Image
+              alt="Decoras"
+              src={About1}
+              width={327}
+              height={254}
+              layout="fixed"
+            />
+            <Image
+              alt="Decoras"
+              src={About1}
+              width={251}
+              height={160}
+              layout="fixed"
+            />
+          </div>
+          <div className="about_content__image__sub_2">
+            <Image
+              alt="Decoras"
+              src={About1}
+              width={251}
+              height={169}
+              layout="fixed"
+            />
+            <Image
+              alt="Decoras"
+              src={About1}
+              width={327}
+              height={263}
+              layout="fixed"
+            />
+          </div>
+        </div>
+
+        <div className="about__content__space__text">
+          <h1>CREATE A SPACE YOU LOVE</h1>
+          <p>
+            Decoras is a state of the art home decor brand which is built on the
+            pillars of luxury, e’lan, elegance and class. Our products enchant
+            for their sobriety, to last for generations, faithful to the shapes
+            of each period, with a touch of the present.
+          </p>
+
+          <p>
+            We are fueled by passion for design and a desire to help others
+            create a space they love.
+          </p>
+          <p>
+            Each product has been designed to cater to comfort and functionality
+            of your home. Our products can simply add a refreshing appeal to
+            your old spaces or you can look for complete set-ups as per your
+            liking.
+          </p>
+        </div>
+      </div>
+      <div className="about__content__mission__container">
+        <div className="about__content__content">
+          <h1>OUR MISSION</h1>
+          <div className="about__mission__mob__image">
+            <Image
+              alt="Decoras"
+              src={About1}
+              height={351}
+              width={600}
+              layout="responsive"
+            />
+          </div>
+          <p>
+            We believe that healthy ideas flourish in an healthy environment,
+            which is why we have created an stress-free way to bring serenity
+            into your home, through our signature collections of home decor
+            products.
+          </p>
+        </div>
+        <div className="about__content__image">
+          <Image
+            alt="Decoras"
+            src={About1}
+            height={351}
+            width={600}
+            layout="responsive"
+          />
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default AboutContent;

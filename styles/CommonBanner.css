@@ -1,0 +1,27 @@
+.common__banner__container {
+  width: 100%;
+  position: relative;
+  height: 45vh;
+  margin: 100px 0 0 0;
+  /* border: 1px solid red; */
+}
+
+.common__banner__container > h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--raleway);
+  color: #ffffff;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .common__banner__container {
+    margin: 56px 0 0 0;
+  }
+
+  .common__banner__container > h1 {
+    font-size: 18px;
+  }
+}

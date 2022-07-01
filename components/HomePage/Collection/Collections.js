@@ -74,7 +74,7 @@ function Collections() {
     <div className="our__collection__container">
       <div className="our__collection__top__bar">
         <div className="our__collection__top__bar__head">
-          <h1>OUR COLLLECTIONS</h1>
+          <h1>OUR COLLECTIONS</h1>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
         </div>
         <Button title={"View All"} />
@@ -89,7 +89,13 @@ function Collections() {
                   backgroundColor: `${item.color}`,
                 }}
               >
-                <Image src={item.img} layout="fixed" height={200} width={180} />
+                <Image
+                  alt="Decoras"
+                  src={item.img}
+                  layout="fixed"
+                  height={200}
+                  width={180}
+                />
 
                 <div className="our__collection__card__name">
                   <p>{item?.name}</p>

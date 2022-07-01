@@ -11,12 +11,16 @@ function Header({ children, href }) {
   const [toggle, setToggle] = useState(false);
 
   const clickHandler = () => {
-    console.log(show);
-    setToggle(true);
-    setShow(0);
+    if (toggle) {
+      setToggle(false);
+      setShow(100);
+    } else {
+      setToggle(true);
+      setShow(0);
+    }
   };
 
-  const hideHandler = () => {
+  const hideHandler = (e) => {
     setShow(100);
     setToggle(false);
   };
@@ -71,7 +75,7 @@ function Header({ children, href }) {
           </Link>
         </div>
         <div className="main__header__logo">
-          <Image layout="intrinsic" src={Logo} />
+          <Image alt="Decoras" layout="intrinsic" src={Logo} />
         </div>
         <div className=""></div>
       </header>
@@ -79,15 +83,29 @@ function Header({ children, href }) {
       {/* mobile version */}
 
       <header className="main__header__mob">
+        <div
+          style={{
+            visibility: "hidden",
+            pointerEvents: "none",
+          }}
+        >
+          Close
+        </div>
         <div className="header__logo__mob">
-          <Image layout="intrinsic" src={Logo} />
+          <Image alt="Decoras" layout="intrinsic" src={Logo} />
         </div>
 
         <div
-          className="main__header__mob__hamburger"
+          className={
+            toggle
+              ? "main__header__mob__hamburger_open"
+              : "main__header__mob__hamburger"
+          }
           onClick={() => clickHandler()}
         >
-          close
+          <div className="hamburger_btn_burger_1"></div>
+          <div className="hamburger_btn_burger_2"></div>
+          <div className="hamburger_btn_burger_3"></div>
         </div>
 
         <div
@@ -96,7 +114,7 @@ function Header({ children, href }) {
               ? "main__header__mob__overlay__hide"
               : "main__header__mob__overlay__show"
           }
-          onClick={() => hideHandler()}
+          onClick={(e) => hideHandler(e)}
         ></div>
         <div
           className="main__header__mob__side__drawer"

@@ -1,0 +1,150 @@
+.about__content__space__container {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  padding: 70px 0 80px 0;
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about__content__image__bar,
+.about__content__space__text {
+  width: 50%;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+}
+
+.about_content__image__sub_1 {
+  display: flex;
+  align-items: baseline;
+}
+
+.about_content__image__sub_2 {
+  display: flex;
+}
+
+.about__content__space__text {
+  margin: 0 0 0 80px;
+}
+
+.about__content__space__text > h1 {
+  margin: 0 0 31px 0;
+}
+
+.about__content__space__text > p {
+  margin: 0 0 31px 0;
+  color: #6c6c6c;
+  letter-spacing: 0.36px;
+  line-height: 1.4;
+}
+
+.about__content__mission__container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 49px 10%;
+}
+
+.about__content__content,
+.about__content__image {
+  width: 50%;
+}
+
+.about__mission__mob__image {
+  display: none;
+}
+
+.about__content__content {
+  margin: 0 80px 0 0;
+}
+
+.about__content__content > h1 {
+  margin: 0 0 31px 0;
+}
+
+.about__content__content > p {
+  color: #6c6c6c;
+  line-height: 1.6;
+}
+
+.about__content__head__text {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .about__content__space__container {
+    flex-direction: column;
+    padding: 0;
+    width: 90%;
+  }
+
+  .about__mission__mob__image {
+    display: block;
+  }
+
+  .about__content__head__text {
+    display: flex;
+    text-align: left;
+    width: 90%;
+    margin: 31px auto 26px auto;
+  }
+
+  .about__content__space__text {
+    margin: 0;
+  }
+
+  .about__content__space__text > h1 {
+    display: none;
+  }
+  .about__content__space__text > p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .about__content__image__bar,
+  .about__content__space__text {
+    width: 100%;
+  }
+
+  .about__content__space__text {
+    margin: 31px 0 0 0;
+  }
+
+  .about__content__mission__container {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  .about__content__content,
+  .about__content__image {
+    width: 100%;
+  }
+
+  .about__content__image {
+    position: relative;
+  }
+
+  .about__content__content {
+    margin: 0;
+  }
+
+  .about__content__content > h1 {
+    margin: 40px 0 31px 0;
+  }
+
+  .about__content__content > p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 31px 0 40px 0;
+  }
+
+  .about__content__image {
+    display: flex;
+    height: 100%;
+  }
+}

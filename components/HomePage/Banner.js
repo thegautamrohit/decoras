@@ -43,6 +43,7 @@ const Banner = () => {
             <CarouselItem key={index}>
               <>
                 <Image
+                  alt="Decoras"
                   src={item.image}
                   layout="fixed"
                   width={1248}
