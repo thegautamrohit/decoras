@@ -7,7 +7,7 @@
 
 .carousel__inner {
   display: flex;
-  width: 100vw;
+  width: 100%;
   gap: 48px;
   transition: transform 0.3s;
 }
@@ -21,7 +21,8 @@
   width: 85%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  position: relative;
 }
 
 .natural__carousal__image__single__slide > h4 {
