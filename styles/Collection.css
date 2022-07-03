@@ -1,5 +1,9 @@
 /* collection Banner style  */
 
+.middle__section__chips {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
   .bannerCollection {
     width: 100%;

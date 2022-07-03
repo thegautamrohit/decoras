@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Img1 from "../../Assets/Cut outs/Decoras images cut out/living/Accent chairs cutout/AC501.png";
 import Img2 from "../../Assets/Cut outs/Decoras images cut out/living/Accent chairs cutout/AC502.png";
 import Img3 from "../../Assets/Cut outs/Decoras images cut out/living/Accent chairs cutout/AC503.png";
@@ -77,7 +77,7 @@ const data = [
   },
 ];
 
-const MiddleSection = () => {
+const MiddleSection = ({ selected, category }) => {
   return (
     <div className="middle__section__container">
       <div
@@ -86,7 +86,18 @@ const MiddleSection = () => {
       >
         {Chips.map((chips, index) => {
           return (
-            <div className="middle__section__chips" key={index}>
+            <div
+              className="middle__section__chips"
+              key={index}
+              onClick={() =>
+                selected({ name: chips, clicked: true, id: index })
+              }
+              style={
+                category.clicked && category.id === index
+                  ? { backgroundColor: "var(--beige)", fontWeight: "medium" }
+                  : {}
+              }
+            >
               <p>{chips}</p>
             </div>
           );
