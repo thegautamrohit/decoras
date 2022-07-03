@@ -4,10 +4,10 @@ import MiddleSection from "../components/Collection/MiddleSection";
 
 const Collection = () => {
   return (
-    <>
+    <div className="our__collection">
       <Banner />
       <MiddleSection />
-    </>
+    </div>
   );
 };
 
