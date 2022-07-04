@@ -14,7 +14,7 @@ const MiddleSection = ({
         className="middle__section__chips__container"
         style={{
           gridTemplateColumns: `repeat(${
-            categoryArray.length + 10
+            categoryArray.length + 2
           } , max-content)`,
         }}
       >
