@@ -56,10 +56,10 @@ import Candles6 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented ca
 import Candles7 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC4007.png";
 import Candles8 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC4008.png";
 import Candles9 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC4009.png";
-import Candles10 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC40010.png";
-import Candles11 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC40011.png";
-import Candles12 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC40012.png";
-import Candles13 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC40013.png";
+import Candles10 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC4010.png";
+import Candles11 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC4011.png";
+import Candles12 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC4012.png";
+import Candles13 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC4013.png";
 
 const productData = [
   // Bags and Stationary
