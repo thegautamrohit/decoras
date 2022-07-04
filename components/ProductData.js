@@ -58,8 +58,8 @@ import Candles8 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented ca
 import Candles9 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC4009.png";
 import Candles10 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC4010.png";
 import Candles11 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC4011.png";
-import Candles12 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC4012.png";
-import Candles13 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC4013.png";
+import Candles12 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC40012.png";
+import Candles13 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC40013.png";
 
 export const ProductData = [
   // Bags and Stationary
