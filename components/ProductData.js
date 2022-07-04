@@ -61,7 +61,7 @@ import Candles11 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented c
 import Candles12 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC40012.png";
 import Candles13 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC40013.png";
 
-const productData = [
+export const ProductData = [
   // Bags and Stationary
 
   {
