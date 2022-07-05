@@ -61,6 +61,50 @@ import Candles11 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented c
 import Candles12 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC40012.png";
 import Candles13 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC40013.png";
 
+import WallHooks1 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall hooks/WH2001.png";
+import WallHooks2 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall hooks/WH2002.png";
+import WallHooks3 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall hooks/WH2003.png";
+import WallHooks4 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall hooks/WH2004.png";
+import WallHooks5 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall hooks/WH2005.png";
+import WallHooks6 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall hooks/WH2006.png";
+
+import WallMirrors1 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM673.png";
+import WallMirrors2 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM674.png";
+import WallMirrors3 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM675.png";
+import WallMirrors4 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM676.jpg";
+import WallMirrors5 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM677.jpg";
+import WallMirrors6 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM678.jpg";
+import WallMirrors7 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM679.png";
+import WallMirrors8 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM680.png";
+import WallMirrors9 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM681.png";
+import WallMirrors10 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM682.jpg";
+
+import WooddenSign1 from "../Assets/Cut outs/Decoras images cut out/Decor/Wooden Signs/WSD101.png";
+import WooddenSign2 from "../Assets/Cut outs/Decoras images cut out/Decor/Wooden Signs/WSD102.png";
+import WooddenSign3 from "../Assets/Cut outs/Decoras images cut out/Decor/Wooden Signs/WSD103.png";
+import WooddenSign4 from "../Assets/Cut outs/Decoras images cut out/Decor/Wooden Signs/WSD104.png";
+import WooddenSign5 from "../Assets/Cut outs/Decoras images cut out/Decor/Wooden Signs/WSD105.png";
+import WooddenSign6 from "../Assets/Cut outs/Decoras images cut out/Decor/Wooden Signs/WSD106.png";
+
+// Floor Import
+
+import Dhurries1 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2210.jpg";
+import Dhurries2 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2211.png";
+import Dhurries3 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2212.png";
+import Dhurries4 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2213.png";
+import Dhurries5 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2214.png";
+import Dhurries6 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2215.png";
+import Dhurries7 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2216.png";
+import Dhurries8 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2217.png";
+import Dhurries9 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2218.png";
+import Dhurries10 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2219.png";
+import Dhurries11 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2220.png";
+
+import Doormat1 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Door mat cutouts/FL2004.png";
+import Doormat2 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Door mat cutouts/FL2001.png";
+import Doormat3 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Door mat cutouts/FL2002.png";
+import Doormat4 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Door mat cutouts/FL2003.png";
+
 const productData = [
   // Bags and Stationary
 
@@ -152,7 +196,7 @@ const productData = [
         ],
       },
       {
-        id: 3,
+        id: 4,
         category: "Scented Candles",
         images: [
           { id: 1, code: "SC4001", img: Candles1 },
@@ -168,6 +212,82 @@ const productData = [
           { id: 11, code: "SC40011", img: Candles11 },
           { id: 12, code: "SC40012", img: Candles12 },
           { id: 13, code: "SC40013", img: Candles13 },
+        ],
+      },
+      {
+        id: 5,
+        category: "Wall Hooks",
+        images: [
+          { id: 1, code: "WH2001", img: WallHooks1 },
+          { id: 2, code: "WH2002", img: WallHooks2 },
+          { id: 3, code: "WH2003", img: WallHooks3 },
+          { id: 4, code: "WH2004", img: WallHooks4 },
+          { id: 5, code: "WH2005", img: WallHooks5 },
+          { id: 6, code: "WH2006", img: WallHooks6 },
+        ],
+      },
+      {
+        id: 6,
+        category: "Wall Mirrors",
+        images: [
+          { id: 1, code: "WM673", img: WallMirrors1 },
+          { id: 2, code: "WM674", img: WallMirrors2 },
+          { id: 3, code: "WM675", img: WallMirrors3 },
+          { id: 4, code: "WM676", img: WallMirrors4 },
+          { id: 5, code: "WM677", img: WallMirrors5 },
+          { id: 6, code: "WM678", img: WallMirrors6 },
+          { id: 7, code: "WM679", img: WallMirrors7 },
+          { id: 8, code: "WM80", img: WallMirrors8 },
+          { id: 9, code: "WM681", img: WallMirrors9 },
+          { id: 10, code: "WM682", img: WallMirrors10 },
+        ],
+      },
+      {
+        id: 7,
+        category: "Woodden Signs",
+        images: [
+          { id: 1, code: "WSD101", img: WooddenSign1 },
+          { id: 2, code: "WSD102", img: WooddenSign2 },
+          { id: 3, code: "WSD103", img: WooddenSign3 },
+          { id: 4, code: "WSD104", img: WooddenSign4 },
+          { id: 5, code: "WSD105", img: WooddenSign5 },
+          { id: 6, code: "WSD106", img: WooddenSign6 },
+        ],
+      },
+    ],
+  },
+
+  // Floor Covering
+
+  {
+    id: 3,
+    category: "Floor Covering",
+    sub_category: [
+      {
+        id: 1,
+        category: "Bathroom Accessories",
+        images: [
+          { id: 1, code: "FC2210", img: Dhurries1 },
+          { id: 2, code: "FC2211", img: Dhurries2 },
+          { id: 3, code: "FC2212", img: Dhurries3 },
+          { id: 4, code: "FC2213", img: Dhurries4 },
+          { id: 5, code: "FC2214", img: Dhurries5 },
+          { id: 6, code: "FC2215", img: Dhurries6 },
+          { id: 7, code: "FC2216", img: Dhurries7 },
+          { id: 8, code: "FC2217", img: Dhurries8 },
+          { id: 9, code: "FC2218", img: Dhurries9 },
+          { id: 10, code: "FC2219", img: Dhurries10 },
+          { id: 11, code: "FC2220", img: Dhurries11 },
+        ],
+      },
+      {
+        id: 2,
+        category: "Door Mat",
+        images: [
+          { id: 1, code: "FC2210", img: Dhurries1 },
+          { id: 2, code: "FC2211", img: Dhurries2 },
+          { id: 3, code: "FC2212", img: Dhurries3 },
+          { id: 4, code: "FC2213", img: Dhurries4 },
         ],
       },
     ],
