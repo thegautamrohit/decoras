@@ -91,7 +91,7 @@ const Carousel = ({ children, details }) => {
           onMouseLeave={() => setPaused(false)}
         >
           <div
-            className="inner"
+            className="carousel__inner"
             style={{
               transform: `translateX(-${
                 240 * activeIndex + 1 * activeIndex
@@ -100,33 +100,30 @@ const Carousel = ({ children, details }) => {
           >
             {data.map((child, index) => {
               return (
-                <div key={index} className="natural__carousal__image__single">
+                <div
+                  key={index}
+                  className="natural__carousal__image__single__slide"
+                >
                   {child}
                 </div>
               );
             })}
           </div>
 
-          <div className="natural__carousal__arrow__mobile">
-            {activeIndex > 0 && (
-              <div
-                className="natural__carousal__arrow__left"
-                onClick={() => {
-                  leftSlide(activeIndex - 1);
-                }}
-              >
-                <GrPrevious color="white" />
-              </div>
-            )}
-
-            <div
-              className="natural__carousal__arrow__right"
-              onClick={() => {
-                rightSlide(activeIndex + 1);
-              }}
-            >
-              <GrNext color="white" style={{ color: "white" }} />
-            </div>
+          <div className="banner__scroll__container">
+            {details.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  className={
+                    activeIndex === index
+                      ? "active__banner__scroll"
+                      : "banner__scroll"
+                  }
+                  onClick={() => setActiveIndex(index)}
+                ></div>
+              );
+            })}
           </div>
         </div>
       </div>
