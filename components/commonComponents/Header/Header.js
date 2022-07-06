@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Logo from "../../../Assets/Logo/DecorasLogo.png";
+import Icon from "../../../Assets/misc/headericon.png";
 import { useRouter } from "next/router";
 function Header({ children, href }) {
   const router = useRouter();
@@ -78,7 +79,9 @@ function Header({ children, href }) {
           <div className="main__header__logo">
             <Image alt="Decoras" layout="intrinsic" src={Logo} />
           </div>
-          <div className=""></div>
+          <div className="main__header__right__icon">
+            <Image alt="Decoras" layout="intrinsic" src={Icon} />
+          </div>
         </div>
       </header>
 
