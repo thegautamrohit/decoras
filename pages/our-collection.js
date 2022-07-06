@@ -35,15 +35,29 @@ const Collection = () => {
     shuffleArray(getSpecificCategory);
     setShuffled([...getSpecificCategory]);
   };
+  const selectedCategorySub = (data) => {
+    const getSpecificCategory = ProductData.filter(
+      (item) => item.sub_category === data.name
+    );
+    shuffleArray(getSpecificCategory);
+    setShuffled([...getSpecificCategory]);
+  };
 
+  const goBack = () => {
+    setCategorizedArray(categoryArray);
+    setShuffled(shuffledArray);
+    setCategory({ name: "", clicked: false, id: 0 });
+  };
   return (
     <div className="our__collection">
       <Banner name={category.name} />
       <MiddleSection
         selected={(data) => selectedCategory(data)}
+        selectedSub={(data) => selectedCategorySub(data)}
         category={category}
         categoryArray={categorizedArray}
         shuffledArray={shuffled}
+        back={() => goBack()}
       />
     </div>
   );

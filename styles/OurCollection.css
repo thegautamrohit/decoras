@@ -41,6 +41,7 @@
 .our__collection__card__name > p {
   color: #1d1d1b;
   font-size: 14px;
+  text-transform: capitalize;
 }
 
 .our__collection__Product__card > p {
@@ -48,6 +49,7 @@
   font-size: 14px;
   text-align: left;
   width: 100%;
+  text-transform: capitalize;
 }
 
 .our__collection__card__name > p:nth-child(2) {

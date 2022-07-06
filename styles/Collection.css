@@ -80,6 +80,7 @@
     color: #1d1d1b;
     opacity: 1;
     padding: 10px;
+    text-transform: capitalize;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1050px) {
@@ -116,6 +117,18 @@
     grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
     margin: 50px auto;
     gap: 25px;
+  }
+
+  .middle__section__button {
+    border: 1px solid #1d1d1b;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 31px;
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 768px) {
@@ -188,7 +201,6 @@
     border: 1px solid #1d1d1b;
     border-radius: 22px;
     opacity: 1;
-
   }
 
   .middle__section__chips > p {
