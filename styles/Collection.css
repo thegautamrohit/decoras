@@ -16,7 +16,7 @@
     margin-top: var(--header-height-desktop);
   }
 
-  .bannerCollection > h1 {
+  .bannerCollectionMainHeader {
     font-weight: bold;
     font-family: var(--raleway);
     font-size: 32px;
@@ -24,8 +24,29 @@
     color: #1d1d1b;
     text-transform: uppercase;
   }
+  .animation__title {
+    font-weight: bold;
+    font-family: var(--raleway);
+    font-size: 32px;
+    letter-spacing: 0.58px;
+    color: #1d1d1b;
+    text-transform: uppercase;
+    transform: translateY(100px);
+    transition: transform 1s;
+  }
 
-  .bannerCollection > h4 {
+  /* animation */
+
+  @keyframes slide_up {
+    from {
+      bottom: 50px;
+    }
+    to {
+      bottom: 0;
+    }
+  }
+
+  .bannerCollectionMainHeaderData {
     font-weight: normal;
     font-family: var(--raleway);
     font-size: 20px;
@@ -221,5 +242,17 @@
     margin: 50px auto;
     gap: 25px;
     place-items: center;
+  }
+
+  .middle__section__button {
+    border: 1px solid #1d1d1b;
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1px;
+    cursor: pointer;
   }
 }
