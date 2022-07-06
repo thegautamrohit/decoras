@@ -1,29 +1,53 @@
 import React, { useState, useEffect } from "react";
 import Carousel, { CarouselItem } from "../commonComponents/Carousal/Caraousal";
-import BannerImage from "../../Assets/Banner/luxury-modern-dark-living-room-interior@2x.png";
+import Banner1 from "../../Assets/Banner/banner1.png";
+import Banner2 from "../../Assets/Banner/banner2.png";
+import Banner3 from "../../Assets/Banner/banner3.png";
+import Banner4 from "../../Assets/Banner/banner4.png";
+import Banner5 from "../../Assets/Banner/banner5.png";
+import Banner6 from "../../Assets/Banner/banner6.png";
+import Banner7 from "../../Assets/Banner/banner7.png";
+import Banner8 from "../../Assets/Banner/banner8.png";
+import Banner9 from "../../Assets/Banner/banner9.png";
 import Image from "next/image";
 import Button from "../commonComponents/Button/Button";
 
 const data = [
   {
     id: 1,
-    image: BannerImage,
+    image: Banner1,
   },
   {
     id: 2,
-    image: BannerImage,
+    image: Banner2,
   },
   {
     id: 3,
-    image: BannerImage,
+    image: Banner3,
   },
   {
     id: 4,
-    image: BannerImage,
+    image: Banner4,
   },
   {
     id: 5,
-    image: BannerImage,
+    image: Banner5,
+  },
+  {
+    id: 6,
+    image: Banner6,
+  },
+  {
+    id: 7,
+    image: Banner7,
+  },
+  {
+    id: 8,
+    image: Banner8,
+  },
+  {
+    id: 9,
+    image: Banner9,
   },
 ];
 const Banner = () => {
