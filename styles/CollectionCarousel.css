@@ -15,6 +15,7 @@
 .collection__carousal__container__desktop {
   width: 100%;
   position: relative;
+  margin: 0 0 0 96px;
 }
 
 .collection__carousal__image__single__slide {
@@ -37,7 +38,7 @@
 }
 
 .collection__carousal__arrow {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* position: absolute;
   top: 50%;
   transform: translateY(-50%);
