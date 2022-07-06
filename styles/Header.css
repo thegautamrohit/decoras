@@ -79,6 +79,8 @@
     z-index: 10;
     background-color: #fff;
     width: 100%;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 2px 2px 5px #00000029;
     /* border: 1px solid red; */
   }
 
@@ -149,7 +151,7 @@
     transition: all 0.3s ease-in-out;
     width: 20px;
     height: 16px;
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
   .main__header__mob__hamburger_open {

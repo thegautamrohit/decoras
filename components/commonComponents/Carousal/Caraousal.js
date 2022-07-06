@@ -93,9 +93,7 @@ const Carousel = ({ children, details }) => {
           <div
             className="carousel__inner"
             style={{
-              transform: `translateX(-${
-                240 * activeIndex + 1 * activeIndex
-              }px)`,
+              transform: `translateX(-${100 * activeIndex + 10 * activeIndex}%)`,
             }}
           >
             {data.map((child, index) => {
@@ -110,15 +108,15 @@ const Carousel = ({ children, details }) => {
             })}
           </div>
 
-          <div className="banner__scroll__container">
+          <div className="banner__scroll__container__mobile">
             {details.map((item, index) => {
               return (
                 <div
                   key={index}
                   className={
                     activeIndex === index
-                      ? "active__banner__scroll"
-                      : "banner__scroll"
+                      ? "active__banner__scroll__mobile"
+                      : "banner__scroll__mobile"
                   }
                   onClick={() => setActiveIndex(index)}
                 ></div>

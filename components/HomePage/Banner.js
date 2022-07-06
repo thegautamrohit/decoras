@@ -46,7 +46,7 @@ const Banner = () => {
                   alt="Decoras"
                   src={item.image}
                   layout="fixed"
-                  width={1248}
+                  width={500}
                   height={574}
                 />
                 <div className="carousel__caption">

@@ -86,11 +86,9 @@ const Carousel = ({ children, details }) => {
           onMouseLeave={() => setPaused(false)}
         >
           <div
-            className="inner"
+            className="collection__carousal__inner"
             style={{
-              transform: `translateX(-${
-                240 * activeIndex + 1 * activeIndex
-              }px)`,
+              transform: `translateX(-${70 * activeIndex + 2.8 * activeIndex}%)`,
             }}
           >
             {data.map((child, index) => {
@@ -105,26 +103,24 @@ const Carousel = ({ children, details }) => {
             })}
           </div>
 
-          <div className="collection__carousal__arrow__mobile">
-            {activeIndex > 0 && (
-              <div
-                className="collection__carousal__arrow__left"
-                onClick={() => {
-                  leftSlide(activeIndex - 1);
-                }}
-              >
-                <BsArrowLeft color="#6c6c6c" />
-              </div>
-            )}
-
+          {activeIndex > 0 && (
             <div
-              className="collection__carousal__arrow__right"
+              className="collection__carousal__arrow__left"
               onClick={() => {
-                rightSlide(activeIndex + 1);
+                leftSlide(activeIndex - 1);
               }}
             >
-              <BsArrowRight color="#6c6c6c" style={{ color: "#6c6c6c" }} />
+              <BsArrowLeft color="#6c6c6c" />
             </div>
+          )}
+
+          <div
+            className="collection__carousal__arrow__right"
+            onClick={() => {
+              rightSlide(activeIndex + 1);
+            }}
+          >
+            <BsArrowRight color="#6c6c6c" style={{ color: "#6c6c6c" }} />
           </div>
         </div>
       </div>

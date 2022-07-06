@@ -1,8 +1,9 @@
 .carousel {
   width: 100%;
   margin: 0 auto;
-
+  position: relative;
   overflow: hidden;
+  transition: all 1s;
 }
 
 .collection__carousel__inner {
@@ -90,12 +91,50 @@
     height: 33px;
     width: 33px;
   }
-
   .collection__carousal__image__single__slide {
     width: 250px;
     height: 327px;
     /* border: 1px solid red; */
     padding: 0 20px;
+  }
+  .collection__carousal__container__desktop {
+    display: none;
+  }
+
+  .collection__carousal__inner {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.3s;
+  }
+
+  .collection__carousal__arrow__left {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+    cursor: pointer;
+    border: 2px solid #6c6c6c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .collection__carousal__arrow__right {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+    cursor: pointer;
+    border: 2px solid #6c6c6c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

@@ -66,10 +66,16 @@
 @media screen and (max-width: 768px) {
   .our__collection__container {
     padding: 0;
+    margin: 30px auto;
+    width: 90%;
+  }
+
+  .our__collection__top__bar > button {
+    display: none;
   }
 
   .our__collection__top__bar {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
   }
 }
