@@ -61,7 +61,53 @@ import Candles11 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented c
 import Candles12 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC40012.png";
 import Candles13 from "../Assets/Cut outs/Decoras images cut out/Decor/Scented candles/SC40013.png";
 
-export const ProductData = [
+import WallHooks1 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall hooks/WH2001.png";
+import WallHooks2 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall hooks/WH2002.png";
+import WallHooks3 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall hooks/WH2003.png";
+import WallHooks4 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall hooks/WH2004.png";
+import WallHooks5 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall hooks/WH2005.png";
+import WallHooks6 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall hooks/WH2006.png";
+
+import WallMirrors1 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM673.png";
+import WallMirrors2 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM674.png";
+import WallMirrors3 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM675.png";
+import WallMirrors4 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM676.jpg";
+import WallMirrors5 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM677.jpg";
+import WallMirrors6 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM678.jpg";
+import WallMirrors7 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM679.png";
+import WallMirrors8 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM680.png";
+import WallMirrors9 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM681.png";
+import WallMirrors10 from "../Assets/Cut outs/Decoras images cut out/Decor/Wall mirrors/WM682.jpg";
+
+import WooddenSign1 from "../Assets/Cut outs/Decoras images cut out/Decor/Wooden Signs/WSD101.png";
+import WooddenSign2 from "../Assets/Cut outs/Decoras images cut out/Decor/Wooden Signs/WSD102.png";
+import WooddenSign3 from "../Assets/Cut outs/Decoras images cut out/Decor/Wooden Signs/WSD103.png";
+import WooddenSign4 from "../Assets/Cut outs/Decoras images cut out/Decor/Wooden Signs/WSD104.png";
+import WooddenSign5 from "../Assets/Cut outs/Decoras images cut out/Decor/Wooden Signs/WSD105.png";
+import WooddenSign6 from "../Assets/Cut outs/Decoras images cut out/Decor/Wooden Signs/WSD106.png";
+
+// Floor Import
+
+import Dhurries1 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2210.jpg";
+import Dhurries2 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2211.png";
+import Dhurries3 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2212.png";
+import Dhurries4 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2213.png";
+import Dhurries5 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2214.png";
+import Dhurries6 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2215.png";
+import Dhurries7 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2216.png";
+import Dhurries8 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2217.png";
+import Dhurries9 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2218.png";
+import Dhurries10 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2219.png";
+import Dhurries11 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Dhurries cutout/FC2220.png";
+
+import Doormat1 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Door mat cutouts/FL2004.png";
+import Doormat2 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Door mat cutouts/FL2001.png";
+import Doormat3 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Door mat cutouts/FL2002.png";
+import Doormat4 from "../Assets/Cut outs/Decoras images cut out/Floor covering/Door mat cutouts/FL2003.png";
+
+const productData = [
+  // Bags and Stationary
+
   {
     id: 1,
     code: "BG5609",
