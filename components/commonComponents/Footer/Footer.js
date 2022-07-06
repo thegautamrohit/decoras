@@ -20,98 +20,100 @@ function Footer() {
 
   return (
     <footer className="footer__container">
-      <div className="footer__top__bar">
-        <div className="footer__decoras__icon">
-          <Image
-            alt="Decoras"
-            src={Logo}
-            className="footer__decoras__icon__image"
-            layout="intrinsic"
-            width={130}
-            height={44}
-          />
+      <div className="footer__container__main">
+        <div className="footer__top__bar">
+          <div className="footer__decoras__icon">
+            <Image
+              alt="Decoras"
+              src={Logo}
+              className="footer__decoras__icon__image"
+              layout="intrinsic"
+              width={130}
+              height={44}
+            />
+          </div>
+
+          <div className="footer__scroll__top" onClick={() => scrollTop()}>
+            <Image alt="Decoras" src={Scroll} height={50} width={50} />
+          </div>
         </div>
 
-        <div className="footer__scroll__top" onClick={() => scrollTop()}>
-          <Image alt="Decoras" src={Scroll} height={50} width={50} />
-        </div>
-      </div>
-
-      <div className="footer__middle__bar">
-        <Link href="/">
-          <a
-            className={
-              router.pathname == "/"
-                ? "active__footer__link"
-                : "inactive__footer__link"
-            }
-          >
-            Home
-          </a>
-        </Link>
-        <Link href="/">
-          <a
-            className={
-              router.pathname == "/collections"
-                ? "active__footer__link"
-                : "inactive__footer__link"
-            }
-          >
-            Collections
-          </a>
-        </Link>
-        <Link href="/about-us">
-          <a
-            className={
-              router.pathname == "/about-us"
-                ? "active__footer__link"
-                : "inactive__footer__link"
-            }
-          >
-            About Us
-          </a>
-        </Link>
-        <Link href="/contact-us">
-          <a
-            className={
-              router.pathname == "/contact-us"
-                ? "active__footer__link"
-                : "inactive__footer__link"
-            }
-          >
-            Contact Us
-          </a>
-        </Link>
-      </div>
-
-      <div className="footer__bottom__bar">
-        <div className="footer__social_icons">
-          <Link className="footer__social__mono__link" href="/">
-            <a className="footer__social__mono__link">
-              <FaFacebookF color="#23332F" />
+        <div className="footer__middle__bar">
+          <Link href="/">
+            <a
+              className={
+                router.pathname == "/"
+                  ? "active__footer__link"
+                  : "inactive__footer__link"
+              }
+            >
+              Home
             </a>
           </Link>
-          <Link className="footer__social__mono__link" href="/">
-            <a className="footer__social__mono__link">
-              <BsInstagram color="#23332F" />
+          <Link href="/">
+            <a
+              className={
+                router.pathname == "/collections"
+                  ? "active__footer__link"
+                  : "inactive__footer__link"
+              }
+            >
+              Collections
             </a>
           </Link>
-          <Link className="footer__social__mono__link" href="/">
-            <a className="footer__social__mono__link">
-              <BsWhatsapp color="#23332F" />
+          <Link href="/about-us">
+            <a
+              className={
+                router.pathname == "/about-us"
+                  ? "active__footer__link"
+                  : "inactive__footer__link"
+              }
+            >
+              About Us
             </a>
           </Link>
-          <Link className="footer__social__mono__link" href="/">
-            <a className="footer__social__mono__link">
-              <FaLinkedinIn color="#23332F" />
+          <Link href="/contact-us">
+            <a
+              className={
+                router.pathname == "/contact-us"
+                  ? "active__footer__link"
+                  : "inactive__footer__link"
+              }
+            >
+              Contact Us
             </a>
           </Link>
         </div>
 
-        <div className="footer__disclaimer__bar">
-          <p>Disclaimer</p>
-          <p>Privacy Policy</p>
-          <p>2022 Decoras</p>
+        <div className="footer__bottom__bar">
+          <div className="footer__social_icons">
+            <Link className="footer__social__mono__link" href="/">
+              <a className="footer__social__mono__link">
+                <FaFacebookF color="#23332F" />
+              </a>
+            </Link>
+            <Link className="footer__social__mono__link" href="/">
+              <a className="footer__social__mono__link">
+                <BsInstagram color="#23332F" />
+              </a>
+            </Link>
+            <Link className="footer__social__mono__link" href="/">
+              <a className="footer__social__mono__link">
+                <BsWhatsapp color="#23332F" />
+              </a>
+            </Link>
+            <Link className="footer__social__mono__link" href="/">
+              <a className="footer__social__mono__link">
+                <FaLinkedinIn color="#23332F" />
+              </a>
+            </Link>
+          </div>
+
+          <div className="footer__disclaimer__bar">
+            <p>Disclaimer</p>
+            <p>Privacy Policy</p>
+            <p>2022 Decoras</p>
+          </div>
         </div>
       </div>
     </footer>

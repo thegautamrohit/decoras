@@ -1,7 +1,7 @@
 .main__header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   height: 100px;
   box-shadow: 2px 2px 20px #82828214;
@@ -11,6 +11,18 @@
   left: 0;
   right: 0;
   z-index: 10;
+}
+
+.main__header__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-width: 2000px;
+  margin: auto;
+  background: inherit;
+  box-shadow: inherit;
 }
 
 .main__header__link {

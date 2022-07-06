@@ -2,10 +2,19 @@
   height: 446px;
   width: 100%;
   display: flex;
+  align-items: center;
+  background-color: var(--green);
+}
+.footer__container__main {
+  height: 446px;
+  width: 100%;
+  max-width: 2000px;
+  display: flex;
   flex-direction: column;
   padding: 74px 47px 70px 96px;
-  background-color: var(--green);
+  background-color: inherit;
   color: var(--green);
+  margin: auto;
 }
 
 .footer__top__bar {

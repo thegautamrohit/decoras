@@ -9,6 +9,7 @@ const MiddleSection = ({
   shuffledArray,
   back,
   selectedSub,
+  sub_category,
 }) => {
   return (
     <div className="middle__section__container">
@@ -49,7 +50,15 @@ const MiddleSection = ({
             return (
               <div
                 className="middle__section__chips"
-                style={{ cursor: "pointer" }}
+                style={
+                  sub_category.id === index
+                    ? {
+                        cursor: "pointer",
+                        backgroundColor: "var(--beige)",
+                        border: "none",
+                      }
+                    : { cursor: "pointer" }
+                }
                 key={index}
                 onClick={() =>
                   selectedSub({
