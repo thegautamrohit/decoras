@@ -161,3 +161,17 @@
     height: 100%;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+  .about__content__content > p,
+  .about__content__space__text > p {
+    font-size: 14px;
+  }
+
+  .about__content__space__text > h1,
+  .about__content__content > h1,
+  .about__content__space__text > h1,
+  .about__content__content > h1 {
+    font-size: 28px;
+  }
+}
