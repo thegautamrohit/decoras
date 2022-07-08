@@ -138,15 +138,37 @@ function Header({ children, href }) {
               Home
             </a>
           </Link>
-          <Link href="/collections">
+          <Link href="/our-collection">
             <a
               className={
-                router.asPath === "/collections"
+                router.asPath === "/our-collection"
                   ? "header_mob_link_active"
                   : "header_mob_link"
               }
             >
               Collections
+            </a>
+          </Link>
+          <Link href="/about">
+            <a
+              className={
+                router.asPath === "/about"
+                  ? "header_mob_link_active"
+                  : "header_mob_link"
+              }
+            >
+              About
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a
+              className={
+                router.asPath === "/contact"
+                  ? "header_mob_link_active"
+                  : "header_mob_link"
+              }
+            >
+              Contact
             </a>
           </Link>
         </div>

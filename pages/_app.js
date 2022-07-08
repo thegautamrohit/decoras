@@ -11,7 +11,12 @@ import "../styles/CommonBanner.css";
 import "../styles/AboutContent.css";
 import "../styles/ContactSection.css";
 import "../styles/Banner.css";
-import "../styles/Collection.css"
+import "../styles/Homebanner.css";
+import "../styles/Collection.css";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
