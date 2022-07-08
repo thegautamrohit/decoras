@@ -15,7 +15,7 @@ function AboutContent() {
                 src={About1}
                 width={327}
                 height={254}
-                layout="fixed"
+                layout="intrinsic"
               />
             </div>
             <div className="about__content__image__part_2">
@@ -24,7 +24,7 @@ function AboutContent() {
                 src={About1}
                 width={251}
                 height={160}
-                layout="fixed"
+                layout="intrinsic"
               />
             </div>
           </div>
@@ -35,7 +35,7 @@ function AboutContent() {
                 src={About1}
                 width={251}
                 height={169}
-                layout="fixed"
+                layout="intrinsic"
               />
             </div>
 
@@ -45,7 +45,7 @@ function AboutContent() {
                 src={About1}
                 width={327}
                 height={263}
-                layout="fixed"
+                layout="intrinsic"
               />
             </div>
           </div>

@@ -27,6 +27,13 @@
 }
 
 .about__content__image__part_1,
+.about__content__image__part_2,
+.about__content__image__part_3,
+.about__content__image__part_4 {
+  position: relative;
+}
+
+.about__content__image__part_1,
 .about__content__image__part_3 {
   margin: 0 25px 0 0;
 }
