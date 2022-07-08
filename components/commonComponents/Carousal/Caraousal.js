@@ -36,6 +36,24 @@ const Carousel = ({ children, details }) => {
     setData([...children]);
   }, []);
 
+  const checkCarouselWidth = () => {
+    if (window.innerWidth > 1474) {
+      return 80 * activeIndex + 7.8 * activeIndex;
+    }
+    if (window.innerWidth < 1474 && window.innerWidth >= 1300) {
+      return 80 * activeIndex + 8.5 * activeIndex;
+    }
+    if (window.innerWidth < 1300 && window.innerWidth >= 1024) {
+      return 80 * activeIndex + 9.5 * activeIndex;
+    }
+    if (window.innerWidth < 1024 && window.innerWidth >= 900) {
+      return 80 * activeIndex + 10 * activeIndex;
+    }
+    if (window.innerWidth < 900 && window.innerWidth >= 768) {
+      return 80 * activeIndex + 11 * activeIndex;
+    }
+  };
+
   return (
     <>
       <div className="natural__carousal__container__desktop">
@@ -48,11 +66,7 @@ const Carousel = ({ children, details }) => {
           <div
             className="carousel__inner"
             style={{
-              transform: `translateX(-${
-                window.innerWidth > 1474
-                  ? 1248 * activeIndex
-                  : (1198 - window.innerWidth / 10) * activeIndex - activeIndex
-              }px)`,
+              transform: `translateX(-${checkCarouselWidth()}%)`,
             }}
           >
             {data.map((child, index) => {
@@ -93,7 +107,9 @@ const Carousel = ({ children, details }) => {
           <div
             className="carousel__inner"
             style={{
-              transform: `translateX(-${100 * activeIndex + 10 * activeIndex}%)`,
+              transform: `translateX(-${
+                100 * activeIndex + 10 * activeIndex
+              }%)`,
             }}
           >
             {data.map((child, index) => {

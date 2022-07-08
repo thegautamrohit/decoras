@@ -70,17 +70,17 @@ const Banner = () => {
                   alt="Decoras"
                   src={item.image}
                   layout="fixed"
-                  width={500}
+                  width={window.innerWidth}
                   height={574}
                 />
-                <div className="carousel__caption">
+                {/* <div className="carousel__caption">
                   <h1>WE LOVE INTERIORS</h1>
                   <h3>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy e
                   </h3>
                   <Button title={"Explore"} />
-                </div>
+                </div> */}
               </>
             </CarouselItem>
           );
