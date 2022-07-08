@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../components/commonComponents/Banner/Banner";
-import Image from "../Assets/Banner/luxury-modern-dark-living-room-interior@2x.png";
+import Image from "../Assets/Banner/banner1.png";
 import AboutContent from "../components/About/AboutContent";
 
 function about() {

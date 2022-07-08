@@ -1,5 +1,5 @@
 import Image from "next/image";
-import About1 from "../../Assets/Banner/luxury-modern-dark-living-room-interior@2x.png";
+import About1 from "../../Assets/Banner/banner5.png";
 import React from "react";
 
 function AboutContent() {
@@ -9,36 +9,45 @@ function AboutContent() {
       <div className="about__content__space__container">
         <div className="about__content__image__bar">
           <div className="about_content__image__sub_1">
-            <Image
-              alt="Decoras"
-              src={About1}
-              width={327}
-              height={254}
-              layout="fixed"
-            />
-            <Image
-              alt="Decoras"
-              src={About1}
-              width={251}
-              height={160}
-              layout="fixed"
-            />
+            <div className="about__content__image__part_1">
+              <Image
+                alt="Decoras"
+                src={About1}
+                width={327}
+                height={254}
+                layout="fixed"
+              />
+            </div>
+            <div className="about__content__image__part_2">
+              <Image
+                alt="Decoras"
+                src={About1}
+                width={251}
+                height={160}
+                layout="fixed"
+              />
+            </div>
           </div>
           <div className="about_content__image__sub_2">
-            <Image
-              alt="Decoras"
-              src={About1}
-              width={251}
-              height={169}
-              layout="fixed"
-            />
-            <Image
-              alt="Decoras"
-              src={About1}
-              width={327}
-              height={263}
-              layout="fixed"
-            />
+            <div className="about__content__image__part_3">
+              <Image
+                alt="Decoras"
+                src={About1}
+                width={251}
+                height={169}
+                layout="fixed"
+              />
+            </div>
+
+            <div className="about__content__image__part_4">
+              <Image
+                alt="Decoras"
+                src={About1}
+                width={327}
+                height={263}
+                layout="fixed"
+              />
+            </div>
           </div>
         </div>
 

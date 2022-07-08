@@ -53,7 +53,7 @@ function Header({ children, href }) {
                 Our Collection
               </a>
             </Link>
-            <Link href="/about-us">
+            <Link href="/about">
               <a
                 style={
                   router.asPath === "/about-us"
@@ -64,7 +64,7 @@ function Header({ children, href }) {
                 About Us
               </a>
             </Link>
-            <Link href="/contact-us">
+            <Link href="/contact">
               <a
                 style={
                   router.asPath === "/contact-us"
