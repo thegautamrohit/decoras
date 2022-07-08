@@ -52,6 +52,9 @@ const Carousel = ({ children, details }) => {
     if (window.innerWidth < 900 && window.innerWidth >= 768) {
       return 80 * activeIndex + 11 * activeIndex;
     }
+    if (window.innerWidth < 768 && window.innerWidth >= 308) {
+      return 80 * activeIndex + 30.9 * activeIndex;
+    }
   };
 
   return (
@@ -107,9 +110,7 @@ const Carousel = ({ children, details }) => {
           <div
             className="carousel__inner"
             style={{
-              transform: `translateX(-${
-                100 * activeIndex + 10 * activeIndex
-              }%)`,
+              transform: `translateX(-${checkCarouselWidth()}%)`,
             }}
           >
             {data.map((child, index) => {
