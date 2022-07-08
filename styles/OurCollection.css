@@ -45,6 +45,12 @@
   justify-content: center;
 }
 
+.our__collection__Product__card_2:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px #dfdfdf;
+  transition: all ease-in-out 0.3s;
+}
+
 .our__collection__card__name {
   width: 100%;
   display: flex;
