@@ -85,7 +85,13 @@
     width: 100%;
     padding: 41px 16px 30px 16px;
   }
-
+  .footer__container__main {
+    width: 100%;
+    padding: 0;
+    background-color: inherit;
+    color: var(--green);
+    margin: auto;
+  }
   .footer__bottom__bar {
     display: flex;
     flex-direction: column;
