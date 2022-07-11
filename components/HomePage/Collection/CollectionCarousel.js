@@ -39,9 +39,7 @@ const Carousel = ({ children, details }) => {
           <div
             className="collection__carousel__inner"
             style={{
-              transform: `translateX(-${
-                272 * activeIndex + 1 * activeIndex
-              }px)`,
+              transform: `translateX(-${100 * activeIndex + 5 * activeIndex}%)`,
             }}
           >
             {data.map((child, index) => {
@@ -88,7 +86,9 @@ const Carousel = ({ children, details }) => {
           <div
             className="collection__carousal__inner"
             style={{
-              transform: `translateX(-${70 * activeIndex + 2.8 * activeIndex}%)`,
+              transform: `translateX(-${
+                80 * activeIndex + 0.9 * activeIndex
+              }%)`,
             }}
           >
             {data.map((child, index) => {

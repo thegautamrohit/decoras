@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import Carousel, { CarouselItem } from "../commonComponents/Carousal/Caraousal";
+import React from "react";
+
 import Banner1 from "../../Assets/Banner/banner1.png";
 import Banner2 from "../../Assets/Banner/banner2.png";
 import Banner3 from "../../Assets/Banner/banner3.png";
@@ -11,7 +11,7 @@ import Banner8 from "../../Assets/Banner/banner8.png";
 import Banner9 from "../../Assets/Banner/banner9.png";
 import BannerMobile1 from "../../Assets/Banner/bannerMobile1.png";
 import Image from "next/image";
-import Button from "../commonComponents/Button/Button";
+// import Button from "../commonComponents/Button/Button";
 import { Pagination } from "swiper";
 // import Slider from "react-slick";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -92,22 +92,6 @@ const dataMobile = [
   },
 ];
 const Banner = () => {
-  const [width, setWidth] = useState(1548);
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1.1,
-    slidesToScroll: 1,
-    className: "whole__carousal",
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", reportWindowSize);
-
-    const reportWindowSize = () => setWidth(window.innerWidth);
-  }, []);
-
   return (
     <>
       <div className="homepage__banner">
@@ -120,6 +104,7 @@ const Banner = () => {
             clickable: true,
           }}
           modules={[Pagination]}
+          className="whole__carousal"
         >
           {dataDesktop?.map((item, index) => {
             return (
@@ -168,6 +153,7 @@ const Banner = () => {
             clickable: true,
           }}
           modules={[Pagination]}
+          className="whole__carousal"
         >
           {dataMobile?.map((item, index) => {
             return (
