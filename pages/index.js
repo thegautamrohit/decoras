@@ -6,10 +6,12 @@ const Banner = dynamic(() => import("../components/HomePage/Banner"), {
 });
 
 import Collections from "../components/HomePage/Collection/Collections";
+import HomeBanner from "../components/HomePage/HomeBanner";
 function index() {
   return (
     <div className="homepage__global">
       <Banner />
+      {/* <HomeBanner /> */}
       <Collections />
       <AboutSection />
     </div>

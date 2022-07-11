@@ -14,7 +14,7 @@ const colors = [
 const Card = ({ data }) => {
   return (
     <div
-      className="our__collection__Product__card"
+      className="our__collection__Product__card_2"
       style={{
         backgroundColor: `${colors[Math.floor(Math.random() * colors.length)]}`,
       }}

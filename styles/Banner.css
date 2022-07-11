@@ -43,6 +43,7 @@
   .homepage__banner {
     margin-top: 56px;
     margin-left: 0px;
+    /* height: 30vh; */
   }
   .carousel__caption {
     display: none;
