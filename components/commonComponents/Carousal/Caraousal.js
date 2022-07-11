@@ -52,8 +52,36 @@ const Carousel = ({ children, details }) => {
     if (window.innerWidth < 900 && window.innerWidth >= 768) {
       return 80 * activeIndex + 11 * activeIndex;
     }
-    if (window.innerWidth < 768 && window.innerWidth >= 308) {
-      return 80 * activeIndex + 30.9 * activeIndex;
+    if (window.innerWidth < 900 && window.innerWidth >= 768) {
+      return 80 * activeIndex + 11 * activeIndex;
+    }
+    if (window.innerWidth < 768 && window.innerWidth >= 700) {
+      return 100 * activeIndex + 6.9 * activeIndex;
+    }
+    if (window.innerWidth < 700 && window.innerWidth >= 650) {
+      return 100 * activeIndex + 7.5 * activeIndex;
+    }
+    if (window.innerWidth < 650 && window.innerWidth >= 600) {
+      return 100 * activeIndex + 8.9 * activeIndex;
+    }
+    if (window.innerWidth < 600 && window.innerWidth >= 550) {
+      return 100 * activeIndex + 7.5 * activeIndex;
+    }
+    if (window.innerWidth < 550 && window.innerWidth >= 500) {
+      return 100 * activeIndex + 10.5 * activeIndex;
+    }
+    if (window.innerWidth < 488 && window.innerWidth >= 420) {
+      return 100 * activeIndex + 12.3 * activeIndex;
+    }
+    if (window.innerWidth < 420 && window.innerWidth >= 391) {
+      return 100 * activeIndex + 12.9 * activeIndex;
+    }
+
+    if (window.innerWidth < 391 && window.innerWidth >= 370) {
+      return 100 * activeIndex + 14.3 * activeIndex;
+    }
+    if (window.innerWidth <= 370 && window.innerWidth >= 308) {
+      return 100 * activeIndex + 14.9 * activeIndex;
     }
   };
 

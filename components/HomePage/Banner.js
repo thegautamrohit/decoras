@@ -71,7 +71,8 @@ const Banner = () => {
                   src={item.image}
                   layout="fixed"
                   width={window.innerWidth}
-                  height={574}
+                  height={window.innerWidth < 768 ? 400 : 574}
+                  objectFit="cover"
                 />
                 {/* <div className="carousel__caption">
                   <h1>WE LOVE INTERIORS</h1>

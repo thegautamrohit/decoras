@@ -5,6 +5,9 @@
   overflow: hidden;
 }
 
+.carousal__main__image {
+  height: 500px;
+}
 .carousel__inner {
   display: flex;
   width: 100%;
@@ -54,13 +57,6 @@
     width: 33px;
   }
 
-  .natural__carousal__image__single__slide {
-    width: 250px;
-    height: 327px;
-    /* border: 1px solid red; */
-    padding: 0 20px;
-  }
-
   .carousel {
     width: 100%;
     margin: 0 auto;
@@ -76,9 +72,9 @@
   }
 
   .natural__carousal__container__mobile {
-    width: 100%;
+    width: 90%;
     position: relative;
-    margin-top: 30px;
+    margin: 30px auto;
   }
 
   .natural__carousal__image__single__slide {
@@ -87,6 +83,8 @@
     align-items: center;
     justify-content: flex-start;
     position: relative;
+
+    height: 400px;
   }
 
   .natural__carousal__image__single__slide > h4 {
