@@ -13,10 +13,10 @@ import "../styles/ContactSection.css";
 import "../styles/Banner.css";
 import "../styles/Homebanner.css";
 import "../styles/Collection.css";
-
+import "swiper/css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import "swiper/css/pagination";
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
