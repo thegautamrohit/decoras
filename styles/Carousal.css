@@ -56,7 +56,7 @@
 
   .whole__carousal {
     width: 100%;
-    height: 100%;
+    height: 574px;
     margin-left: 0px !important;
   }
 
@@ -79,7 +79,7 @@
     max-height: 574px !important;
   }
 
-  .whole__carousal > .swiper-wrapper > .swiper-slide > .swiper-slide > span {
+  .whole__carousal > .swiper-wrapper > .swiper-slide > span {
     width: 100% !important;
   }
 }
@@ -139,6 +139,7 @@
 
   .whole__carousal {
     width: 90% !important;
+    height: 400px !important;
   }
 
   .whole__carousal > .swiper-wrapper > .swiper-slide {
@@ -160,7 +161,7 @@
     background-color: #ffffff !important ;
   }
 
-  .whole__carousal > .swiper-wrapper > .swiper-slide  > span {
+  .whole__carousal > .swiper-wrapper > .swiper-slide > span {
     width: 100% !important;
   }
 }
