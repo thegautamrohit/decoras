@@ -58,7 +58,7 @@
     height: 100%;
   }
   .swiper-pagination-bullets {
-    bottom: 30px !important;
+    bottom: 40px !important;
   }
 
   .swiper-pagination-bullet {
@@ -71,7 +71,11 @@
 
   .swiper-slide {
     width: 80% !important;
-    height: 440px !important;
+    max-height: 574px !important;
+  }
+
+  .swiper-slide > span {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -147,6 +151,10 @@
   }
   .swiper-pagination-bullet-active {
     background-color: #ffffff !important ;
+  }
+
+  .swiper-slide > span {
+    width: 100% !important;
   }
 }
 
