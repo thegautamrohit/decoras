@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 1540px) and (min-width: 768px) {
   .whole__carousal > .swiper-pagination-bullets {
-    top: 34vw !important;
+    top: 33vw !important;
   }
 }
 
@@ -65,10 +65,10 @@
     /* height: 574px; */
     margin-left: 0px !important;
   }
-/* 
+
   .whole__carousal > .swiper-pagination-bullets {
-    bottom: 40px !important;
-  } */
+    bottom: 30px !important;
+  }
 
   .whole__carousal > .swiper-pagination-bullets > .swiper-pagination-bullet {
     border-radius: 0px !important;
@@ -82,7 +82,7 @@
 
   .whole__carousal > .swiper-wrapper > .swiper-slide {
     width: 80% !important;
-    max-height: 574px !important;
+    max-height: 710px !important;
   }
 
   .whole__carousal > .swiper-wrapper > .swiper-slide > span {
@@ -145,12 +145,12 @@
 
   .whole__carousal {
     width: 90% !important;
-    height: 400px !important;
   }
 
   .whole__carousal > .swiper-wrapper > .swiper-slide {
     width: 100% !important;
-    height: 400px !important;
+    min-height: 400px !important;
+    max-width: 500px !important;
   }
 
   .whole__carousal > .swiper-pagination-bullets {

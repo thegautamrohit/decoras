@@ -1,15 +1,19 @@
 import React from "react";
 
-import Banner1 from "../../Assets/Banner/banner1.png";
-import Banner2 from "../../Assets/Banner/banner2.png";
-import Banner3 from "../../Assets/Banner/banner3.png";
-import Banner4 from "../../Assets/Banner/banner4.png";
-import Banner5 from "../../Assets/Banner/banner5.png";
-import Banner6 from "../../Assets/Banner/banner6.png";
-import Banner7 from "../../Assets/Banner/banner7.png";
-import Banner8 from "../../Assets/Banner/banner8.png";
-import Banner9 from "../../Assets/Banner/banner9.png";
-import BannerMobile1 from "../../Assets/Banner/bannerMobile1.png";
+import Banner1 from "../../Assets/Banner/desktop_banner/banner1.png";
+import Banner2 from "../../Assets/Banner/desktop_banner/banner2.png";
+import Banner3 from "../../Assets/Banner/desktop_banner/banner3.png";
+import Banner4 from "../../Assets/Banner/desktop_banner/banner4.png";
+import Banner5 from "../../Assets/Banner/desktop_banner/banner5.png";
+import Banner6 from "../../Assets/Banner/desktop_banner/banner6.png";
+import Banner7 from "../../Assets/Banner/desktop_banner/banner7.png";
+import BannerMobile1 from "../../Assets/Banner/mobile_banners/banner1.png";
+import BannerMobile2 from "../../Assets/Banner/mobile_banners/banner2.png";
+import BannerMobile3 from "../../Assets/Banner/mobile_banners/banner3.png";
+import BannerMobile4 from "../../Assets/Banner/mobile_banners/banner4.png";
+import BannerMobile5 from "../../Assets/Banner/mobile_banners/banner5.png";
+import BannerMobile6 from "../../Assets/Banner/mobile_banners/banner6.png";
+import BannerMobile7 from "../../Assets/Banner/mobile_banners/banner7.png";
 import Image from "next/image";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -42,14 +46,6 @@ const dataDesktop = [
     id: 7,
     image: Banner7,
   },
-  {
-    id: 8,
-    image: Banner8,
-  },
-  {
-    id: 9,
-    image: Banner9,
-  },
 ];
 const dataMobile = [
   {
@@ -58,35 +54,27 @@ const dataMobile = [
   },
   {
     id: 2,
-    image: BannerMobile1,
+    image: BannerMobile2,
   },
   {
     id: 3,
-    image: BannerMobile1,
+    image: BannerMobile3,
   },
   {
     id: 4,
-    image: BannerMobile1,
+    image: BannerMobile4,
   },
   {
     id: 5,
-    image: BannerMobile1,
+    image: BannerMobile5,
   },
   {
     id: 6,
-    image: BannerMobile1,
+    image: BannerMobile6,
   },
   {
     id: 7,
-    image: BannerMobile1,
-  },
-  {
-    id: 8,
-    image: BannerMobile1,
-  },
-  {
-    id: 9,
-    image: BannerMobile1,
+    image: BannerMobile7,
   },
 ];
 const Banner = () => {
@@ -104,9 +92,9 @@ const Banner = () => {
           modules={[Pagination]}
           className="whole__carousal"
         >
-          {dataDesktop?.map((item, index) => {
+          {dataDesktop?.map((item) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={item.id}>
                 <Image alt="Decoras" src={item.image} objectFit="cover" />
               </SwiperSlide>
             );
@@ -124,14 +112,13 @@ const Banner = () => {
           modules={[Pagination]}
           className="whole__carousal"
         >
-          {dataMobile?.map((item, index) => {
+          {dataMobile?.map((item) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={item.id}>
                 <Image alt="Decoras" src={item.image} objectFit="cover" />
               </SwiperSlide>
             );
           })}
-          ...
         </Swiper>
       </div>
     </>
