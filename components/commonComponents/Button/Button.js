@@ -1,7 +1,17 @@
 import React from "react";
-
-const Button = ({ title }) => {
-  return <button className="button">{title}</button>;
+import Link from "next/link";
+const Button = ({ title, place }) => {
+  return (
+    <>
+      {place === "collection" ? (
+        <Link href={place === "collection" && "/our-collection"}>
+          <a className="button">{title}</a>
+        </Link>
+      ) : (
+        <button className="button">{title}</button>
+      )}
+    </>
+  );
 };
 
 export default Button;

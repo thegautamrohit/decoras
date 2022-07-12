@@ -49,6 +49,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1540px) and (min-width: 768px) {
+  .whole__carousal > .swiper-pagination-bullets {
+    top: 34vw !important;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .natural__carousal__container__mobile {
     display: none;
@@ -56,13 +62,13 @@
 
   .whole__carousal {
     width: 100%;
-    height: 574px;
+    /* height: 574px; */
     margin-left: 0px !important;
   }
-
+/* 
   .whole__carousal > .swiper-pagination-bullets {
     bottom: 40px !important;
-  }
+  } */
 
   .whole__carousal > .swiper-pagination-bullets > .swiper-pagination-bullet {
     border-radius: 0px !important;

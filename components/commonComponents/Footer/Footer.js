@@ -50,10 +50,10 @@ function Footer() {
               Home
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/our-collection">
             <a
               className={
-                router.pathname == "/collections"
+                router.pathname == "/our-collection"
                   ? "active__footer__link"
                   : "inactive__footer__link"
               }
@@ -61,10 +61,10 @@ function Footer() {
               Collections
             </a>
           </Link>
-          <Link href="/about-us">
+          <Link href="/about">
             <a
               className={
-                router.pathname == "/about-us"
+                router.pathname == "/about"
                   ? "active__footer__link"
                   : "inactive__footer__link"
               }
@@ -72,10 +72,10 @@ function Footer() {
               About Us
             </a>
           </Link>
-          <Link href="/contact-us">
+          <Link href="/contact">
             <a
               className={
-                router.pathname == "/contact-us"
+                router.pathname == "/contact"
                   ? "active__footer__link"
                   : "inactive__footer__link"
               }

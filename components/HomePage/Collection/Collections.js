@@ -13,8 +13,11 @@ import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
-
+import { ProductData } from "../../ProductData";
+import { shuffleArray } from "../../../helper/helper";
 SwiperCore.use([Navigation]);
+
+const shuffledArray = shuffleArray(ProductData);
 function Collections() {
   const sliderRef = useRef(null);
 
@@ -28,63 +31,14 @@ function Collections() {
     sliderRef.current.swiper.slideNext();
   }, []);
 
-  const data = [
-    {
-      id: 1,
-      name: "LOUNGE CHAIR",
-      category: "Living",
-      code: "LC207",
-      img: Img1,
-      color: "#F6F7F9",
-    },
-    {
-      id: 2,
-      name: "LOUNGE CHAIR",
-      category: "Living",
-      code: "LC207",
-      img: Img2,
-      color: "#F3F9F1",
-    },
-    {
-      id: 3,
-      name: "LOUNGE CHAIR",
-      category: "Living",
-      code: "LC207",
-      img: Img3,
-      color: "#F9F1F9",
-    },
-    {
-      id: 4,
-      name: "LOUNGE CHAIR",
-      category: "Living",
-      code: "LC207",
-      img: Img4,
-      color: "#F9F6F1",
-    },
-    {
-      id: 5,
-      name: "LOUNGE CHAIR",
-      category: "Living",
-      code: "LC207",
-      img: Img5,
-      color: "#F3F9F1",
-    },
-    {
-      id: 6,
-      name: "LOUNGE CHAIR",
-      category: "Living",
-      code: "LC207",
-      img: Img6,
-      color: "#F6F7F9",
-    },
-    {
-      id: 7,
-      name: "LOUNGE CHAIR",
-      category: "Living",
-      code: "LC207",
-      img: Img7,
-      color: "#F9F6F1",
-    },
+  const colors = [
+    "#F6F7F9",
+    "#F3F9F1",
+    "#F9F1F9",
+    "#F9F6F1",
+    "#F3F9F1",
+    "#F6F7F9",
+    "#F9F6F1",
   ];
 
   return (
@@ -92,9 +46,12 @@ function Collections() {
       <div className="our__collection__top__bar">
         <div className="our__collection__top__bar__head">
           <h1>OUR COLLECTIONS</h1>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+          <p>
+            Our collection contains work from emerging talent and
+            internationally recognized designers.
+          </p>
         </div>
-        <Button title={"View All"} />
+        <Button title={"View All"} place={"collection"} />
       </div>
 
       <Swiper
@@ -106,29 +63,32 @@ function Collections() {
         modules={[Navigation]}
         className="mySwiper"
       >
-        {data?.map((item, index) => {
+        {shuffledArray?.slice(0, 20).map((item) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={item.id}>
               <div
                 className="our__collection__Product__card"
                 style={{
-                  backgroundColor: `${item.color}`,
+                  backgroundColor: `${
+                    colors[Math.floor(Math.random() * colors.length)]
+                  }`,
                 }}
               >
                 <Image
                   alt="Decoras"
                   src={item.img}
                   layout="fixed"
+                  objectFit="contain"
                   height={200}
                   width={180}
                 />
 
                 <div className="our__collection__card__name">
-                  <p>{item?.name}</p>
+                  <p>{item?.sub_category}</p>
                   <p>{item?.code}</p>
                 </div>
 
-                <p>{item?.category}</p>
+                {/* <p>{item?.category}</p> */}
               </div>
             </SwiperSlide>
           );
@@ -143,38 +103,7 @@ function Collections() {
         >
           <BsArrowRight color="#6c6c6c" style={{ color: "#6c6c6c" }} />
         </div>
-        ...
       </Swiper>
-
-      {/* <Carousel>
-        {data?.map((item, index) => {
-          return (
-            <CarouselItem key={index}>
-              <div
-                className="our__collection__Product__card"
-                style={{
-                  backgroundColor: `${item.color}`,
-                }}
-              >
-                <Image
-                  alt="Decoras"
-                  src={item.img}
-                  layout="fixed"
-                  height={200}
-                  width={180}
-                />
-
-                <div className="our__collection__card__name">
-                  <p>{item?.name}</p>
-                  <p>{item?.code}</p>
-                </div>
-
-                <p>{item?.category}</p>
-              </div>
-            </CarouselItem>
-          );
-        })}
-      </Carousel> */}
     </div>
   );
 }

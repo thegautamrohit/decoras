@@ -11,9 +11,7 @@ import Banner8 from "../../Assets/Banner/banner8.png";
 import Banner9 from "../../Assets/Banner/banner9.png";
 import BannerMobile1 from "../../Assets/Banner/bannerMobile1.png";
 import Image from "next/image";
-// import Button from "../commonComponents/Button/Button";
 import { Pagination } from "swiper";
-// import Slider from "react-slick";
 import { Swiper, SwiperSlide } from "swiper/react";
 const dataDesktop = [
   {
@@ -113,36 +111,7 @@ const Banner = () => {
               </SwiperSlide>
             );
           })}
-          ...
         </Swiper>
-        {/* <Slider {...settings}></Slider> */}
-
-        {/* <Carousel title="Homepage" details={data}>
-        {data?.map((item, index) => {
-          return (
-            <CarouselItem key={index}>
-              <>
-                <Image
-                  alt="Decoras"
-                  src={item.image}
-                  layout="fixed"
-                  width={window.innerWidth}
-                  height={window.innerWidth < 768 ? 400 : 574}
-                  objectFit="cover"
-                />
-                <div className="carousel__caption">
-                  <h1>WE LOVE INTERIORS</h1>
-                  <h3>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy e
-                  </h3>
-                  <Button title={"Explore"} />
-                </div>
-              </>
-            </CarouselItem>
-          );
-        })}
-      </Carousel> */}
       </div>
 
       <div className="homepage__banner__mobile">
@@ -164,34 +133,6 @@ const Banner = () => {
           })}
           ...
         </Swiper>
-        {/* <Slider {...settings}></Slider> */}
-
-        {/* <Carousel title="Homepage" details={data}>
-        {data?.map((item, index) => {
-          return (
-            <CarouselItem key={index}>
-              <>
-                <Image
-                  alt="Decoras"
-                  src={item.image}
-                  layout="fixed"
-                  width={window.innerWidth}
-                  height={window.innerWidth < 768 ? 400 : 574}
-                  objectFit="cover"
-                />
-                <div className="carousel__caption">
-                  <h1>WE LOVE INTERIORS</h1>
-                  <h3>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy e
-                  </h3>
-                  <Button title={"Explore"} />
-                </div>
-              </>
-            </CarouselItem>
-          );
-        })}
-      </Carousel> */}
       </div>
     </>
   );

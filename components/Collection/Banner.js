@@ -29,7 +29,8 @@ const Banner = ({ name }) => {
     <div className="bannerCollection">
       <h1 className="bannerCollectionMainHeader">OUR COLLECTION</h1>
       <h4 className="bannerCollectionMainHeaderData">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+        Our collection contains work from emerging talent and internationally
+        recognized designers.
       </h4>
 
       <h1 className="animation__title">{name}</h1>
