@@ -36,7 +36,7 @@ function Header({ children, href }) {
                 style={
                   router.asPath === "/"
                     ? { color: "var(--black)", fontWeight: "600" }
-                    : { color: "var(--beige)", textDecoration: "none" }
+                    : { color: "var(--grey)", textDecoration: "none" }
                 }
               >
                 Home
@@ -47,7 +47,7 @@ function Header({ children, href }) {
                 style={
                   router.asPath === "/our-collection"
                     ? { color: "var(--black)", fontWeight: "600" }
-                    : { color: "var(--beige)", textDecoration: "none" }
+                    : { color: "var(--grey)", textDecoration: "none" }
                 }
               >
                 Our Collection
@@ -58,7 +58,7 @@ function Header({ children, href }) {
                 style={
                   router.asPath === "/about"
                     ? { color: "var(--black)", fontWeight: "600" }
-                    : { color: "var(--beige)", textDecoration: "none" }
+                    : { color: "var(--grey)", textDecoration: "none" }
                 }
               >
                 About Us
@@ -69,7 +69,7 @@ function Header({ children, href }) {
                 style={
                   router.asPath === "/contact"
                     ? { color: "var(--black)", fontWeight: "600" }
-                    : { color: "var(--beige)", textDecoration: "none" }
+                    : { color: "var(--grey)", textDecoration: "none" }
                 }
               >
                 Contact Us

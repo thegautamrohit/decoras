@@ -132,7 +132,7 @@
 
   .header_mob_link {
     font-size: 16px;
-    color: var(--beige);
+    color: var(--grey);
     margin: 0 0 17px 0;
     /* text-transform: uppercase; */
     text-decoration: none;
