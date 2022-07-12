@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "../commonComponents/Cards/Card";
 import { MdArrowBack } from "react-icons/md";
-
+import { Swiper, SwiperSlide } from "swiper/react";
 const MiddleSection = ({
   selected,
   category,
@@ -45,33 +45,40 @@ const MiddleSection = ({
               </div>
             );
           })}
-        {category.clicked &&
-          categoryArray.map((chips, index) => {
-            return (
-              <div
-                className="middle__section__chips"
-                style={
-                  sub_category.id === index
-                    ? {
-                        cursor: "pointer",
-                        backgroundColor: "var(--beige)",
-                        border: "none",
-                      }
-                    : { cursor: "pointer" }
-                }
-                key={index}
-                onClick={() =>
-                  selectedSub({
-                    name: chips,
-                    clicked: true,
-                    id: index,
-                  })
-                }
-              >
-                <p>{chips}</p>
-              </div>
-            );
-          })}
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={"auto"}
+          className="collections__chips"
+        >
+          {category.clicked &&
+            categoryArray.map((chips, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <div
+                    className="middle__section__chips"
+                    style={
+                      sub_category.id === index
+                        ? {
+                            cursor: "pointer",
+                            backgroundColor: "var(--beige)",
+                            border: "none",
+                          }
+                        : { cursor: "pointer" }
+                    }
+                    onClick={() =>
+                      selectedSub({
+                        name: chips,
+                        clicked: true,
+                        id: index,
+                      })
+                    }
+                  >
+                    <p>{chips === category.name ? `All ${chips}` : chips}</p>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+        </Swiper>
       </div>
       <div className="middle__section__cards__container">
         {shuffledArray.map((cards, index) => (

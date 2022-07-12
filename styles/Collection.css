@@ -4,6 +4,9 @@
   cursor: pointer;
 }
 
+.collections__chips > .swiper-wrapper > .swiper-slide {
+  width: fit-content !important;
+}
 @media screen and (min-width: 768px) {
   .bannerCollection {
     width: 100%;
@@ -53,7 +56,9 @@
     letter-spacing: 0.36px;
     color: #6c6c6c;
     margin-top: 10px;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    width: 600px;
+    text-align: center;
   }
 
   /* Middle Section  */
@@ -71,7 +76,7 @@
   .middle__section__chips__container {
     display: grid;
     gap: 17px;
-    width: 80%;
+    max-width: 100%;
     margin-top: 41px;
     overflow-x: scroll;
     -ms-overflow-style: none; /* Internet Explorer 10+ */
