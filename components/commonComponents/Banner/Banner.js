@@ -13,6 +13,7 @@ function Banner({ img, title }) {
         backgroundRepeat: "no-repeat",
       }}
     >
+      <div className="common__banner__overlay"></div>
       <h1>{title}</h1>
     </div>
   );

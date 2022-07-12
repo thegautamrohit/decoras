@@ -1,7 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import Banner from "../components/commonComponents/Banner/Banner";
-import Image from "../Assets/Banner/banner1.png";
+import Image from "../Assets/Banner/desktop_banner/banner1.png";
 import AboutContent from "../components/About/AboutContent";
 import AboutMission from "../components/About/AboutMission";
 

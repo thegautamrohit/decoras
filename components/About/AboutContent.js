@@ -1,5 +1,5 @@
 import Image from "next/image";
-import About1 from "../../Assets/Banner/banner5.png";
+import About1 from "../../Assets/Banner/desktop_banner/banner5.png";
 import React from "react";
 
 function AboutContent() {
