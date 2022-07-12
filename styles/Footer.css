@@ -1,12 +1,12 @@
 .footer__container {
-  height: 446px;
+  /* height: 446px; */
   width: 100%;
   display: flex;
   align-items: center;
   background-color: var(--green);
 }
 .footer__container__main {
-  height: 446px;
+  height: 100%;
   width: 100%;
   max-width: 2000px;
   display: flex;

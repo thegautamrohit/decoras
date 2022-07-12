@@ -16,13 +16,13 @@ function AboutSection() {
           </p>
           <Button title="Read More" />
         </div>
-        <div className="about__mono__slab__image">
-          <Image
+        <div className="about__mono__slab__image_1">
+          {/* <Image
             alt="Decoras"
             src={About}
             className="about__mono__slab__image__img"
             layout="fill"
-          />
+          /> */}
         </div>
       </div>
       <div className="about__section__mono__slab">
@@ -35,13 +35,13 @@ function AboutSection() {
           </p>
           <Button title="Read More" />
         </div>
-        <div className="about__mono__slab__image">
-          <Image
+        <div className="about__mono__slab__image_2">
+          {/* <Image
             alt="Decoras"
             src={Mission}
             className="about__mono__slab__image__img"
             layout="fill"
-          />
+          /> */}
         </div>
       </div>
     </div>
