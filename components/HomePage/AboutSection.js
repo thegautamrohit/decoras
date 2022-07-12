@@ -8,7 +8,7 @@ function AboutSection() {
   return (
     <div className="about__section__container">
       <div className="about__section__mono__slab">
-        <div className="about__mono__slab__content">
+        <div className="about__mono__slab__content_1">
           <h1>About Us</h1>
           <p>
             No middlemen, exclusives from over the globe, Reliable customer
@@ -21,14 +21,12 @@ function AboutSection() {
             alt="Decoras"
             src={About}
             className="about__mono__slab__image__img"
-            // height={414}
-            // width={719}
             layout="fill"
           />
         </div>
       </div>
       <div className="about__section__mono__slab">
-        <div className="about__mono__slab__content">
+        <div className="about__mono__slab__content_2">
           <h1>Our Mission</h1>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -42,11 +40,7 @@ function AboutSection() {
             alt="Decoras"
             src={Mission}
             className="about__mono__slab__image__img"
-            // height={414}
-            // width={719}
             layout="fill"
-            // objectFit="cover"
-            // quality={100}
           />
         </div>
       </div>
