@@ -56,7 +56,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 2%;
+  left: 0%;
   cursor: pointer;
   border: 2px solid #6c6c6c;
   border-radius: 50%;
@@ -72,7 +72,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 3%;
+  right: 5%;
   cursor: pointer;
   border: 2px solid #6c6c6c;
   border-radius: 50%;
@@ -80,6 +80,11 @@
   align-items: center;
   justify-content: center;
   z-index: 10;
+}
+
+.collection__carousal__arrow__left:hover,
+.collection__carousal__arrow__right:hover {
+  background-color: rgb(236, 229, 229);
 }
 
 @media screen and (min-width: 768px) {
