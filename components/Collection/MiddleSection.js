@@ -45,40 +45,41 @@ const MiddleSection = ({
               </div>
             );
           })}
-        <Swiper
+        {/* <Swiper
           spaceBetween={30}
           slidesPerView={"auto"}
           className="collections__chips"
-        >
-          {category.clicked &&
-            categoryArray.map((chips, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <div
-                    className="middle__section__chips"
-                    style={
-                      sub_category.id === index
-                        ? {
-                            cursor: "pointer",
-                            backgroundColor: "var(--beige)",
-                            border: "none",
-                          }
-                        : { cursor: "pointer" }
-                    }
-                    onClick={() =>
-                      selectedSub({
-                        name: chips,
-                        clicked: true,
-                        id: index,
-                      })
-                    }
-                  >
-                    <p>{chips === category.name ? `All ${chips}` : chips}</p>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-        </Swiper>
+        > */}
+        {category.clicked &&
+          categoryArray.map((chips, index) => {
+            return (
+              // <SwiperSlide>
+              <div
+                key={index}
+                className="middle__section__chips"
+                style={
+                  sub_category.id === index
+                    ? {
+                        cursor: "pointer",
+                        backgroundColor: "var(--beige)",
+                        border: "none",
+                      }
+                    : { cursor: "pointer" }
+                }
+                onClick={() =>
+                  selectedSub({
+                    name: chips,
+                    clicked: true,
+                    id: index,
+                  })
+                }
+              >
+                <p>{chips === category.name ? `All ${chips}` : chips}</p>
+              </div>
+              // {/* </SwiperSlide> */}
+            );
+          })}
+        {/* </Swiper> */}
       </div>
       <div className="middle__section__cards__container">
         {shuffledArray.map((cards, index) => (

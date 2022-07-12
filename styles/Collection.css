@@ -125,14 +125,15 @@
       padding: 10px;
     }
     .middle__section__chips__container {
-      display: grid;
+      display: flex;
       gap: 17px;
       width: 80%;
       margin-top: 41px;
       overflow-x: scroll;
+      flex-wrap: wrap;
     }
     .middle__section__chips {
-      width: 104px;
+      width: max-content;
       -ms-overflow-style: none; /* Internet Explorer 10+ */
       scrollbar-width: none; /* Firefox */
     }
@@ -218,8 +219,11 @@
     width: 100%;
     margin-top: 41px;
     overflow-x: scroll;
-    display: grid;
+    display: flex;
     gap: 17px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     -ms-overflow-style: none; /* Internet Explorer 10+ */
     scrollbar-width: none; /* Firefox */
     position: relative;

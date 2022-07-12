@@ -23,6 +23,7 @@ const Card = ({ data }) => {
         alt="Decoras"
         src={data.img}
         layout="fixed"
+        objectFit="cover"
         height={200}
         width={180}
       />
