@@ -74,13 +74,16 @@
   /* Middle section Chips */
 
   .middle__section__chips__container {
-    display: grid;
+    display: flex;
     gap: 17px;
     max-width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin-top: 41px;
-    overflow-x: scroll;
+    /* overflow-x: scroll;
     -ms-overflow-style: none; /* Internet Explorer 10+ */
-    scrollbar-width: none; /* Firefox */
+    /* scrollbar-width: none; Firefox */
   }
 
   .middle__section__chips {
@@ -122,21 +125,17 @@
       letter-spacing: 0px;
       color: #1d1d1b;
       opacity: 1;
-      padding: 10px;
+      padding: 15px 25px;
     }
     .middle__section__chips__container {
       display: flex;
       gap: 17px;
       width: 80%;
       margin-top: 41px;
-      overflow-x: scroll;
+      /* overflow-x: scroll; */
       flex-wrap: wrap;
     }
-    .middle__section__chips {
-      width: max-content;
-      -ms-overflow-style: none; /* Internet Explorer 10+ */
-      scrollbar-width: none; /* Firefox */
-    }
+
     .middle__section__chips__container::-webkit-scrollbar {
       display: none; /* Safari and Chrome */
     }
@@ -153,6 +152,9 @@
     gap: 35px;
   }
 
+  .middle__section__view__more {
+    margin: 50px auto;
+  }
   .middle__section__button {
     border: 1px solid #1d1d1b;
     border-radius: 50%;
@@ -218,7 +220,7 @@
   .middle__section__chips__container {
     width: 100%;
     margin-top: 41px;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     display: flex;
     gap: 17px;
     flex-wrap: wrap;
@@ -251,6 +253,7 @@
     color: #1d1d1b;
     opacity: 1;
     padding: 10px 15px;
+    text-transform: capitalize;
   }
 
   /* Middle Section Cards / */
@@ -278,5 +281,27 @@
     position: sticky;
     left: 0%;
     background-color: #fff;
+  }
+
+  .animation__title {
+    font-weight: bold;
+    font-family: var(--raleway);
+    font-size: 20px;
+    letter-spacing: 0.58px;
+    color: #1d1d1b;
+    text-transform: uppercase;
+    transform: translateY(50px);
+    transition: transform 1s;
+  }
+
+  /* animation */
+
+  @keyframes slide_up {
+    from {
+      bottom: 10px;
+    }
+    to {
+      bottom: 0;
+    }
   }
 }

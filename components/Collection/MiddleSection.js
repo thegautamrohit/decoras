@@ -11,6 +11,7 @@ const MiddleSection = ({
   selectedSub,
   sub_category,
 }) => {
+  const [more, setMore] = useState(12);
   return (
     <div className="middle__section__container">
       <div
@@ -82,9 +83,14 @@ const MiddleSection = ({
         {/* </Swiper> */}
       </div>
       <div className="middle__section__cards__container">
-        {shuffledArray.map((cards, index) => (
+        {shuffledArray.slice(0, more).map((cards, index) => (
           <Card data={cards} key={index} />
         ))}
+      </div>
+      <div className="middle__section__view__more">
+        <button className="button" onClick={() => setMore((prev) => prev + 15)}>
+          View More
+        </button>
       </div>
     </div>
   );
