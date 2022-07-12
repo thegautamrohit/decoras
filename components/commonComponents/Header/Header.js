@@ -56,7 +56,7 @@ function Header({ children, href }) {
             <Link href="/about">
               <a
                 style={
-                  router.asPath === "/about-us"
+                  router.asPath === "/about"
                     ? { color: "var(--black)", fontWeight: "600" }
                     : { color: "var(--beige)", textDecoration: "none" }
                 }
@@ -67,7 +67,7 @@ function Header({ children, href }) {
             <Link href="/contact">
               <a
                 style={
-                  router.asPath === "/contact-us"
+                  router.asPath === "/contact"
                     ? { color: "var(--black)", fontWeight: "600" }
                     : { color: "var(--beige)", textDecoration: "none" }
                 }
@@ -77,7 +77,13 @@ function Header({ children, href }) {
             </Link>
           </div>
           <div className="main__header__logo">
-            <Image alt="Decoras" layout="intrinsic" src={Logo} />
+            <Image
+              alt="Decoras"
+              layout="intrinsic"
+              src={Logo}
+              height={46}
+              width={136}
+            />
           </div>
           <div className="main__header__right__icon">
             <Image alt="Decoras" layout="intrinsic" src={Icon} />
