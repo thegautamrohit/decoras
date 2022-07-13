@@ -84,7 +84,7 @@
 
 .collection__carousal__arrow__left:hover,
 .collection__carousal__arrow__right:hover {
-  background-color: rgb(236, 229, 229);
+  background-color: rgb(255 247 247);
 }
 
 @media screen and (min-width: 768px) {

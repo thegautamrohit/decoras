@@ -11,8 +11,8 @@ function AboutSection() {
         <div className="about__mono__slab__content_1">
           <h1>About Us</h1>
           <p>
-            No middlemen, exclusives from over the globe, Reliable customer
-            service, One stop shop for Home Owners, providing local products.
+            We are fueled by passion for design and a desire to help others
+            create a space they love.
           </p>
           <Button title="Read More" />
         </div>
@@ -29,9 +29,10 @@ function AboutSection() {
         <div className="about__mono__slab__content_2">
           <h1>Our Mission</h1>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat
+            We believe that healthy ideas flourish in an healthy environment,
+            which is why we have created an stress-free way to bring serenity
+            into your home, through our signature collections of home decor
+            products.
           </p>
           <Button title="Read More" />
         </div>
