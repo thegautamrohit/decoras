@@ -80,6 +80,10 @@
   font-style: italic;
 }
 
+.our__collection__mob_btn {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .our__collection__container {
     padding: 0;
@@ -94,5 +98,17 @@
   .our__collection__top__bar {
     margin: 0 auto;
     width: 100%;
+  }
+
+  .our__collection__mob_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 10px auto;
+    width: 100%;
+  }
+
+  .our__collection__desk_btn {
+    display: none;
   }
 }

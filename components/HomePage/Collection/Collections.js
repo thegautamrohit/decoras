@@ -51,7 +51,9 @@ function Collections() {
             internationally recognized designers.
           </p>
         </div>
-        <Button title={"View All"} place={"collection"} />
+        <div className="our__collection__desk_btn">
+          <Button title={"View All"} place={"collection"} />
+        </div>
       </div>
 
       <Swiper
@@ -104,6 +106,10 @@ function Collections() {
           <BsArrowRight color="#6c6c6c" style={{ color: "#6c6c6c" }} />
         </div>
       </Swiper>
+
+      <div className="our__collection__mob_btn">
+        <Button title={"View All"} place={"collection"} />
+      </div>
     </div>
   );
 }
