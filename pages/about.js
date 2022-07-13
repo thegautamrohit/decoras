@@ -12,9 +12,6 @@ function about() {
       <Fade bottom big>
         <AboutContent />
       </Fade>
-      {/* <Fade bottom big> */}
-      <AboutMission />
-      {/* </Fade> */}
     </>
   );
 }

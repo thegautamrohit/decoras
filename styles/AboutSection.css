@@ -18,8 +18,7 @@
 }
 
 .about__mono__slab__content_1,
-.about__mono__slab__content_2,
-.about__mono__slab__image_2 {
+.about__mono__slab__content_2 {
   width: 50%;
 }
 
@@ -27,16 +26,17 @@
   width: 100%;
   background-image: url("../Assets//Homepage/About/about.png");
   background-repeat: no-repeat;
-  background-position: fixed;
+
   background-size: cover;
-  height: 800px;
+  height: 700px;
 }
 
 .about__mono__slab__image_2 {
   background-image: url("../Assets//Homepage/About/mission.png");
   background-repeat: no-repeat;
-  background-position: fixed;
+  height: 700px;
   background-size: cover;
+  width: 100%;
 }
 
 .about__mono__slab__content_1 {
@@ -46,11 +46,6 @@
 .about__mono__slab__content_2 {
   /* margin-right: 96px; */
   margin: auto;
-}
-
-.about__mono__slab__image_2 {
-  position: relative;
-  height: 415px;
 }
 
 .about__mono__slab__content_1,

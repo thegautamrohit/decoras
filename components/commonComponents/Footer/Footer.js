@@ -86,7 +86,7 @@ function Footer() {
         </div>
 
         <div className="footer__bottom__bar">
-          <div className="footer__social_icons">
+          {/* <div className="footer__social_icons">
             <Link className="footer__social__mono__link" href="/">
               <a className="footer__social__mono__link">
                 <FaFacebookF color="#23332F" />
@@ -107,7 +107,7 @@ function Footer() {
                 <FaLinkedinIn color="#23332F" />
               </a>
             </Link>
-          </div>
+          </div> */}
 
           <div className="footer__disclaimer__bar">
             <p>Disclaimer</p>

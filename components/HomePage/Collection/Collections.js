@@ -1,4 +1,4 @@
-import React, { useRef, useCallback } from "react";
+import React, { useRef, useCallback, useState, useEffect } from "react";
 import Image from "next/image";
 import Button from "../../commonComponents/Button/Button";
 import SwiperCore, { Navigation } from "swiper";
@@ -9,8 +9,14 @@ import { ProductData } from "../../ProductData";
 import { shuffleArray } from "../../../helper/helper";
 SwiperCore.use([Navigation]);
 
-const shuffledArray = shuffleArray(ProductData);
 function Collections() {
+  const [shuffle, setShuffle] = useState([]);
+
+  useEffect(() => {
+    const shuffledArray = shuffleArray(ProductData);
+    setShuffle(shuffledArray);
+  }, []);
+
   const sliderRef = useRef(null);
 
   const handlePrev = useCallback(() => {
@@ -58,7 +64,7 @@ function Collections() {
         loop={true}
         className="mySwiper"
       >
-        {shuffledArray?.slice(0, 20).map((item) => {
+        {shuffle?.slice(0, 20).map((item) => {
           return (
             <SwiperSlide key={item.id}>
               <div
