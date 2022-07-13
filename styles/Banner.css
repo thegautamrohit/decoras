@@ -1,8 +1,9 @@
 .homepage__banner {
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-top: 140px;
   width: 100%;
   margin-left: 184px;
+  margin-bottom: 70px;
 }
 
 .carousel__caption {

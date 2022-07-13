@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useRef, useCallback } from "react";
+import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import Banner1 from "../../Assets/Banner/desktop_banner/banner1.png";
 import Banner2 from "../../Assets/Banner/desktop_banner/banner2.png";
 import Banner3 from "../../Assets/Banner/desktop_banner/banner3.png";
@@ -15,8 +15,9 @@ import BannerMobile5 from "../../Assets/Banner/mobile_banners/banner5.png";
 import BannerMobile6 from "../../Assets/Banner/mobile_banners/banner6.png";
 import BannerMobile7 from "../../Assets/Banner/mobile_banners/banner7.png";
 import Image from "next/image";
-import { Pagination } from "swiper";
+import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+SwiperCore.use([Navigation]);
 const dataDesktop = [
   {
     id: 1,
@@ -78,10 +79,22 @@ const dataMobile = [
   },
 ];
 const Banner = () => {
+  const sliderRef = useRef(null);
+
+  const handlePrev = useCallback(() => {
+    if (!sliderRef.current) return;
+    sliderRef.current.swiper.slidePrev();
+  }, []);
+
+  const handleNext = useCallback(() => {
+    if (!sliderRef.current) return;
+    sliderRef.current.swiper.slideNext();
+  }, []);
   return (
     <>
       <div className="homepage__banner">
         <Swiper
+          ref={sliderRef}
           spaceBetween={40}
           slidesPerView={"auto"}
           onSlideChange={() => console.log("slide change")}
@@ -99,6 +112,16 @@ const Banner = () => {
               </SwiperSlide>
             );
           })}
+
+          <div onClick={handlePrev} className="banner__carousal__arrow__left">
+            <BsArrowLeft color="#6c6c6c" style={{ fontSize: 20 }} />
+          </div>
+          <div onClick={handleNext} className="banner__carousal__arrow__right">
+            <BsArrowRight
+              color="#6c6c6c"
+              style={{ fontSize: 20, fontWeight: "bolder" }}
+            />
+          </div>
         </Swiper>
       </div>
 

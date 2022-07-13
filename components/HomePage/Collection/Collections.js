@@ -1,13 +1,5 @@
 import React, { useRef, useCallback } from "react";
-// import Carousel, { CarouselItem } from "./CollectionCarousel";
 import Image from "next/image";
-import Img1 from "../../../Assets/Cut outs/Decoras images cut out/living/Accent chairs cutout/AC501.png";
-import Img2 from "../../../Assets/Cut outs/Decoras images cut out/living/Accent chairs cutout/AC502.png";
-import Img3 from "../../../Assets/Cut outs/Decoras images cut out/living/Accent chairs cutout/AC503.png";
-import Img4 from "../../../Assets/Cut outs/Decoras images cut out/living/Accent chairs cutout/AC504.png";
-import Img5 from "../../../Assets/Cut outs/Decoras images cut out/living/Accent chairs cutout/AC505.png";
-import Img6 from "../../../Assets/Cut outs/Decoras images cut out/living/Accent chairs cutout/AC506.png";
-import Img7 from "../../../Assets/Cut outs/Decoras images cut out/living/Accent chairs cutout/AC508.png";
 import Button from "../../commonComponents/Button/Button";
 import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -90,20 +82,20 @@ function Collections() {
                   <p>{item?.code}</p>
                 </div>
 
-                {/* <p>{item?.category}</p> */}
+                <p>{item?.category}</p>
               </div>
             </SwiperSlide>
           );
         })}
         <div />
         <div onClick={handlePrev} className="collection__carousal__arrow__left">
-          <BsArrowLeft color="#6c6c6c" />
+          <BsArrowLeft color="#6c6c6c" style={{ fontSize: 20 }} />
         </div>
         <div
           onClick={handleNext}
           className="collection__carousal__arrow__right"
         >
-          <BsArrowRight color="#6c6c6c" style={{ color: "#6c6c6c" }} />
+          <BsArrowRight color="#6c6c6c" style={{ fontSize: 20 }} />
         </div>
       </Swiper>
 
