@@ -44,6 +44,7 @@ function Header({ children, href }) {
             </Link>
             <Link href="/our-collection">
               <a
+                className="header_drop_down_menu"
                 style={
                   router.asPath === "/our-collection"
                     ? { color: "var(--black)", fontWeight: "600" }
@@ -51,6 +52,37 @@ function Header({ children, href }) {
                 }
               >
                 Our Collection
+                <div className="header__drop__down__categories">
+                  <Link href="our-collection?category=Furnishing">
+                    <a className="header__drop__down__category">Furnishing</a>
+                  </Link>
+
+                  <Link href="our-collection?category=Bags_and_Stationery">
+                    <a className="header__drop__down__category">
+                      Bags and Stationery
+                    </a>
+                  </Link>
+
+                  <Link href="our-collection?category=Table_Linens">
+                    <a className="header__drop__down__category">Table Linens</a>
+                  </Link>
+                  <Link href="our-collection?category=Kitchen_Linens">
+                    <a className="header__drop__down__category">
+                      Kitchen Linens
+                    </a>
+                  </Link>
+                  <Link href="our-collection?category=Decor">
+                    <a className="header__drop__down__category">Decor</a>
+                  </Link>
+                  <Link href="our-collection?category=Living">
+                    <a className="header__drop__down__category">Living</a>
+                  </Link>
+                  <Link href="our-collection?category=Floor_Covering">
+                    <a className="header__drop__down__category">
+                      Floor Covering
+                    </a>
+                  </Link>
+                </div>
               </a>
             </Link>
             <Link href="/about">
