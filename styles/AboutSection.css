@@ -19,16 +19,17 @@
 
 .about__mono__slab__content_1,
 .about__mono__slab__content_2,
-.about__mono__slab__image_1,
 .about__mono__slab__image_2 {
   width: 50%;
 }
 
 .about__mono__slab__image_1 {
+  width: 100%;
   background-image: url("../Assets//Homepage/About/about.png");
   background-repeat: no-repeat;
   background-position: fixed;
   background-size: cover;
+  height: 800px;
 }
 
 .about__mono__slab__image_2 {
@@ -47,7 +48,6 @@
   margin: auto;
 }
 
-.about__mono__slab__image_1,
 .about__mono__slab__image_2 {
   position: relative;
   height: 415px;
@@ -77,6 +77,15 @@
   margin: 0 0 38px 0;
   color: var(--grey);
   line-height: 1.6;
+}
+
+.about__mono__slab__image__container {
+  width: 50%;
+  height: 415px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {

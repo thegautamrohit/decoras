@@ -55,6 +55,7 @@ function Collections() {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         modules={[Navigation]}
+        loop={true}
         className="mySwiper"
       >
         {shuffledArray?.slice(0, 20).map((item) => {

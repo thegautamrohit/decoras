@@ -1,6 +1,12 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import AboutSection from "../components/HomePage/AboutSection";
+
+const AboutSection = dynamic(
+  () => import("../components/HomePage/AboutSection"),
+  {
+    ssr: false,
+  }
+);
 const Banner = dynamic(() => import("../components/HomePage/Banner"), {
   ssr: false,
 });
