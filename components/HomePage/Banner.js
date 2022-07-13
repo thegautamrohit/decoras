@@ -99,6 +99,7 @@ const Banner = () => {
           slidesPerView={"auto"}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
+          loop={true}
           pagination={{
             clickable: true,
           }}
@@ -129,6 +130,7 @@ const Banner = () => {
         <Swiper
           spaceBetween={10}
           slidesPerView={"auto"}
+          loop={true}
           pagination={{
             clickable: true,
           }}
