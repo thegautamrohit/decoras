@@ -5,7 +5,7 @@ import React from "react";
 function AboutContent() {
   return (
     <>
-      <h1 className="about__content__head__text">CREATE A SPACE YOU LOVE</h1>
+      {/* <h1 className="about__content__head__text">CREATE A SPACE YOU LOVE</h1> */}
       <div className="about__content__space__container">
         <div className="about__content__image__bar">
           <div className="about_content__image__sub_1">
