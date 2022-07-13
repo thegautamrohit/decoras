@@ -76,15 +76,17 @@ function Header({ children, href }) {
               </a>
             </Link>
           </div>
-          <div className="main__header__logo">
-            <Image
-              alt="Decoras"
-              layout="intrinsic"
-              src={Logo}
-              height={46}
-              width={136}
-            />
-          </div>
+          <Link href="/">
+            <a className="main__header__logo">
+              <Image
+                alt="Decoras"
+                layout="intrinsic"
+                src={Logo}
+                height={46}
+                width={136}
+              />
+            </a>
+          </Link>
           <div className="main__header__right__icon">
             <Image alt="Decoras" layout="intrinsic" src={Icon} />
           </div>
