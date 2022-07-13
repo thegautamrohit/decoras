@@ -2,7 +2,7 @@
   /* overflow: hidden; */
   margin-top: 140px;
   width: 100%;
-  margin-left: 184px;
+  /* margin-left: 184px; */
   margin-bottom: 70px;
 }
 
@@ -43,6 +43,11 @@
 @media screen and (min-width: 768px) {
   .homepage__banner__mobile {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1800px) {
+  .homepage__banner {
+    margin-bottom: 0px;
   }
 }
 
