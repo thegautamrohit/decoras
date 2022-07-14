@@ -40,7 +40,7 @@ function Collections() {
     "#F9F6F1",
   ];
 
-  console.log(shuffle);
+  // console.log(shuffle);
 
   return (
     <div className="our__collection__container">
@@ -61,8 +61,6 @@ function Collections() {
         ref={sliderRef}
         spaceBetween={40}
         slidesPerView={"auto"}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
         modules={[Navigation]}
         // loop={true}
         className="mySwiper"

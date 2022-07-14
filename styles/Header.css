@@ -36,7 +36,8 @@
   /* border: 1px solid blue; */
 }
 
-.main__header__link > a {
+.main__header__mono__link,
+.header_drop_down_menu {
   font-size: 16px;
   text-decoration: underline;
   font-family: var(--raleway);
@@ -230,5 +231,19 @@
   .main__header__mob__hamburger_open > .hamburger_btn_burger_2 {
     visibility: hidden;
     /* transition: all 0.3s ease-in-out; */
+  }
+
+  .header__drop__down__categories_mob {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px 20px;
+  }
+
+  .header__drop__down__category_mob {
+    font-size: 14px;
+    color: var(--grey);
+    margin: 0 0 17px 0;
+    text-decoration: none;
+    font-family: var(--raleway);
   }
 }
