@@ -34,7 +34,7 @@ function HomeBanner() {
     slidesToShow: 1.5,
   };
 
-  console.log(width, width * 0.85);
+  // console.log(width, width * 0.85);
 
   const data = [
     {

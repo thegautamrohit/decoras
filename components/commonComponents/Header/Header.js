@@ -61,33 +61,33 @@ function Header({ children, href }) {
             >
               Our Collection
               <div className="header__drop__down__categories">
-                <Link href="/our-collection?category=Furnishing">
+                <Link href="/our-collection/Furnishing">
                   <a className="header__drop__down__category">Furnishing</a>
                 </Link>
 
-                <Link href="/our-collection?category=Bags_and_Stationery">
+                <Link href="/our-collection/Bags_and_Stationery">
                   <a className="header__drop__down__category">
                     Bags and Stationery
                   </a>
                 </Link>
 
-                <Link href="/our-collection?category=Table_Linens">
+                <Link href="/our-collection/Table_Linens">
                   <a className="header__drop__down__category">Table Linens</a>
                 </Link>
 
-                <Link href="/our-collection?category=Kitchen_Linens">
+                <Link href="/our-collection/Kitchen_Linens">
                   <a className="header__drop__down__category">Kitchen Linens</a>
                 </Link>
 
-                <Link href="/our-collection?category=Decor">
+                <Link href="/our-collection/Decor">
                   <a className="header__drop__down__category">Decor</a>
                 </Link>
 
-                <Link href="/our-collection?category=Living">
+                <Link href="/our-collection/Living">
                   <a className="header__drop__down__category">Living</a>
                 </Link>
 
-                <Link href="/our-collection?category=Floor_Covering">
+                <Link href="/our-collection/Floor_Covering">
                   <a className="header__drop__down__category">Floor Covering</a>
                 </Link>
               </div>
@@ -200,37 +200,37 @@ function Header({ children, href }) {
 
             {expand && (
               <div className="header__drop__down__categories_mob">
-                <Link href="/our-collection?category=Furnishing">
+                <Link href="/our-collection/Furnishing">
                   <a className="header__drop__down__category_mob">Furnishing</a>
                 </Link>
 
-                <Link href="/our-collection?category=Bags_and_Stationery">
+                <Link href="/our-collection/Bags_and_Stationery">
                   <a className="header__drop__down__category_mob">
                     Bags and Stationery
                   </a>
                 </Link>
 
-                <Link href="/our-collection?category=Table_Linens">
+                <Link href="/our-collection/Table_Linens">
                   <a className="header__drop__down__category_mob">
                     Table Linens
                   </a>
                 </Link>
 
-                <Link href="/our-collection?category=Kitchen_Linens">
+                <Link href="/our-collection/Kitchen_Linens">
                   <a className="header__drop__down__category_mob">
                     Kitchen Linens
                   </a>
                 </Link>
 
-                <Link href="/our-collection?category=Decor">
+                <Link href="/our-collection/Decor">
                   <a className="header__drop__down__category_mob">Decor</a>
                 </Link>
 
-                <Link href="/our-collection?category=Living">
+                <Link href="/our-collection/Living">
                   <a className="header__drop__down__category_mob">Living</a>
                 </Link>
 
-                <Link href="/our-collection?category=Floor_Covering">
+                <Link href="/our-collection/Floor_Covering">
                   <a className="header__drop__down__category_mob">
                     Floor Covering
                   </a>

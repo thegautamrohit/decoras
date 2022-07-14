@@ -13,7 +13,7 @@ const Banner = ({ name }) => {
       mainHeader.style.display = "none";
       mainHeaderData.style.display = "none";
       animate.style.transform = "translateX(0)";
-      console.log(animate);
+      // console.log(animate);
     }
 
     return () => {
