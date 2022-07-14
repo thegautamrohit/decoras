@@ -10,6 +10,7 @@ function Header({ children, href }) {
 
   const [show, setShow] = useState(100);
   const [toggle, setToggle] = useState(false);
+  const [expand, setExpand] = useState(false);
 
   const clickHandler = () => {
     if (toggle) {
@@ -26,6 +27,13 @@ function Header({ children, href }) {
     setToggle(false);
   };
 
+  const expandHandler = (e) => {
+    // "header_mob_link_active"
+    //               : "header_mob_link"
+    // console.log(e.target.classList.value);
+    setExpand(!expand);
+  };
+
   return (
     <>
       <header className="main__header">
@@ -33,6 +41,7 @@ function Header({ children, href }) {
           <div className="main__header__link">
             <Link href="/">
               <a
+                className="main__header__mono__link"
                 style={
                   router.asPath === "/"
                     ? { color: "var(--black)", fontWeight: "600" }
@@ -42,55 +51,50 @@ function Header({ children, href }) {
                 Home
               </a>
             </Link>
-            <div>
-              <div
-                className="header_drop_down_menu"
-                style={
-                  router.asPath === "/our-collection"
-                    ? { color: "var(--black)", fontWeight: "600" }
-                    : { color: "var(--grey)", textDecoration: "none" }
-                }
-              >
-                Our Collection
-                <div className="header__drop__down__categories">
-                  {/* <Link href="/our-collection?category=Furnishing">
-                    <a className="header__drop__down__category">Furnishing</a>
-                  </Link> */}
+            <div
+              className="header_drop_down_menu"
+              style={
+                router.asPath === "/our-collection"
+                  ? { color: "var(--black)", fontWeight: "600" }
+                  : { color: "var(--grey)", textDecoration: "none" }
+              }
+            >
+              Our Collection
+              <div className="header__drop__down__categories">
+                <Link href="/our-collection?category=Furnishing">
+                  <a className="header__drop__down__category">Furnishing</a>
+                </Link>
 
-                  {/* <Link href="/our-collection?category=Bags_and_Stationery">
-                    <a className="header__drop__down__category">
-                      Bags and Stationery
-                    </a>
-                  </Link>
+                <Link href="/our-collection?category=Bags_and_Stationery">
+                  <a className="header__drop__down__category">
+                    Bags and Stationery
+                  </a>
+                </Link>
 
-                  <Link href="/our-collection?category=Table_Linens">
-                    <a className="header__drop__down__category">Table Linens</a>
-                  </Link>
+                <Link href="/our-collection?category=Table_Linens">
+                  <a className="header__drop__down__category">Table Linens</a>
+                </Link>
 
-                  <Link href="/our-collection?category=Kitchen_Linens">
-                    <a className="header__drop__down__category">
-                      Kitchen Linens
-                    </a>
-                  </Link>
+                <Link href="/our-collection?category=Kitchen_Linens">
+                  <a className="header__drop__down__category">Kitchen Linens</a>
+                </Link>
 
-                  <Link href="/our-collection?category=Decor">
-                    <a className="header__drop__down__category">Decor</a>
-                  </Link>
+                <Link href="/our-collection?category=Decor">
+                  <a className="header__drop__down__category">Decor</a>
+                </Link>
 
-                  <Link href="/our-collection?category=Living">
-                    <a className="header__drop__down__category">Living</a>
-                  </Link>
+                <Link href="/our-collection?category=Living">
+                  <a className="header__drop__down__category">Living</a>
+                </Link>
 
-                  <Link href="/our-collection?category=Floor_Covering">
-                    <a className="header__drop__down__category">
-                      Floor Covering
-                    </a>
-                  </Link> */}
-                </div>
+                <Link href="/our-collection?category=Floor_Covering">
+                  <a className="header__drop__down__category">Floor Covering</a>
+                </Link>
               </div>
             </div>
             <Link href="/about">
               <a
+                className="main__header__mono__link"
                 style={
                   router.asPath === "/about"
                     ? { color: "var(--black)", fontWeight: "600" }
@@ -102,6 +106,7 @@ function Header({ children, href }) {
             </Link>
             <Link href="/contact">
               <a
+                className="main__header__mono__link"
                 style={
                   router.asPath === "/contact"
                     ? { color: "var(--black)", fontWeight: "600" }
@@ -182,8 +187,8 @@ function Header({ children, href }) {
               Home
             </a>
           </Link>
-          <Link href="/our-collection">
-            <a
+          <div onClick={(e) => expandHandler(e)}>
+            <div
               className={
                 router.asPath === "/our-collection"
                   ? "header_mob_link_active"
@@ -191,8 +196,48 @@ function Header({ children, href }) {
               }
             >
               Collections
-            </a>
-          </Link>
+            </div>
+
+            {expand && (
+              <div className="header__drop__down__categories_mob">
+                <Link href="/our-collection?category=Furnishing">
+                  <a className="header__drop__down__category_mob">Furnishing</a>
+                </Link>
+
+                <Link href="/our-collection?category=Bags_and_Stationery">
+                  <a className="header__drop__down__category_mob">
+                    Bags and Stationery
+                  </a>
+                </Link>
+
+                <Link href="/our-collection?category=Table_Linens">
+                  <a className="header__drop__down__category_mob">
+                    Table Linens
+                  </a>
+                </Link>
+
+                <Link href="/our-collection?category=Kitchen_Linens">
+                  <a className="header__drop__down__category_mob">
+                    Kitchen Linens
+                  </a>
+                </Link>
+
+                <Link href="/our-collection?category=Decor">
+                  <a className="header__drop__down__category_mob">Decor</a>
+                </Link>
+
+                <Link href="/our-collection?category=Living">
+                  <a className="header__drop__down__category_mob">Living</a>
+                </Link>
+
+                <Link href="/our-collection?category=Floor_Covering">
+                  <a className="header__drop__down__category_mob">
+                    Floor Covering
+                  </a>
+                </Link>
+              </div>
+            )}
+          </div>
           <Link href="/about">
             <a
               className={
