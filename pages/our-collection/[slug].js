@@ -147,7 +147,6 @@ export async function getServerSideProps(context) {
       replaceDash
   );
 
-  console.log(img);
   return {
     props: {
       val: replaceDash,
