@@ -74,20 +74,20 @@
   line-height: 1.6;
 }
 
-.about__mono__slab__image__container {
-  width: 50%;
-  height: 415px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @media screen and (max-width: 768px) {
   .about__section__mono__slab,
   .about__section__container > div:nth-child(2) {
     flex-direction: column-reverse;
     height: unset;
+  }
+
+  .about__mono__slab__image__container {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .about__mono__slab__content_1,
@@ -98,7 +98,7 @@
 
   .about__mono__slab__image_1,
   .about__mono__slab__image_2 {
-    height: 210px;
+    height: 430px;
     width: 100%;
     position: relative;
   }

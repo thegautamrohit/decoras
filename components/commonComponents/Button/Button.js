@@ -3,8 +3,8 @@ import Link from "next/link";
 const Button = ({ title, place }) => {
   return (
     <>
-      {place === "collection" ? (
-        <Link href={place === "collection" && "/our-collection"}>
+      {place ? (
+        <Link href={place}>
           <a className="button">{title}</a>
         </Link>
       ) : (
