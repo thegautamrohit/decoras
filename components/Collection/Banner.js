@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-const Banner = ({ name }) => {
+import Image from "next/image";
+
+const Banner = ({ name, img }) => {
   useEffect(() => {
     if (name !== "") {
       const animate = document.getElementsByClassName("animation__title")[0];
@@ -27,6 +29,10 @@ const Banner = ({ name }) => {
 
   return (
     <div className="bannerCollection">
+      <div className="bannerCollectionImage">
+        <Image src={img} layout="fixed" objectFit="cover" height={430} />
+      </div>
+
       <h1 className="bannerCollectionMainHeader">OUR COLLECTION</h1>
       <h4 className="bannerCollectionMainHeaderData">
         Our collection contains work from emerging talent and internationally

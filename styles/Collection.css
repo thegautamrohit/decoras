@@ -14,9 +14,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 230px;
+    height: 430px;
     background: #f6f6f6 0% 0% no-repeat padding-box;
     margin-top: var(--header-height-desktop);
+    position: relative;
   }
 
   .bannerCollectionMainHeader {
@@ -32,7 +33,7 @@
     font-family: var(--raleway);
     font-size: 32px;
     letter-spacing: 0.58px;
-    color: #1d1d1b;
+    color: #fff;
     text-transform: uppercase;
     transform: translateY(100px);
     transition: transform 1s;
@@ -109,7 +110,13 @@
   .middle__section__chips__container::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
   }
+  .bannerCollectionImage {
+    position: absolute;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .middle__section__chips > p {
     font: normal normal normal 0.9rem var(--lato);
     letter-spacing: 0px;
@@ -184,7 +191,7 @@
     font-family: var(--raleway);
     font-size: 20px;
     letter-spacing: 0.58px;
-    color: #1d1d1b;
+    color: #fff;
     text-transform: uppercase;
   }
 
