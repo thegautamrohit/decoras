@@ -7,14 +7,15 @@ import "swiper/css/navigation";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import { ProductData } from "../../ProductData";
 import { shuffleArray } from "../../../helper/helper";
-SwiperCore.use([Navigation]);
 
+const shuffledArray = shuffleArray(ProductData);
+
+SwiperCore.use([Navigation]);
 function Collections() {
   const [shuffle, setShuffle] = useState([]);
 
   useEffect(() => {
-    const shuffledArray = shuffleArray(ProductData);
-    setShuffle([...shuffledArray]);
+    setShuffle(shuffledArray);
   }, []);
 
   const sliderRef = useRef(null);
@@ -56,46 +57,47 @@ function Collections() {
         </div>
       </div>
 
-      {/* <Swiper
+      <Swiper
         ref={sliderRef}
         spaceBetween={40}
         slidesPerView={"auto"}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         modules={[Navigation]}
-        loop={true}
+        // loop={true}
         className="mySwiper"
       >
-        {shuffle?.slice(0, 20).map((item) => {
-          return (
-            <SwiperSlide key={item.id}>
-              <div
-                className="our__collection__Product__card"
-                style={{
-                  backgroundColor: `${
-                    colors[Math.floor(Math.random() * colors.length)]
-                  }`,
-                }}
-              >
-                <Image
-                  alt="Decoras"
-                  src={item.img}
-                  layout="fixed"
-                  objectFit="contain"
-                  height={200}
-                  width={180}
-                />
+        {shuffle.length > 0 &&
+          shuffle?.slice(0, 20).map((item) => {
+            return (
+              <SwiperSlide key={item.id}>
+                <div
+                  className="our__collection__Product__card"
+                  style={{
+                    backgroundColor: `${
+                      colors[Math.floor(Math.random() * colors.length)]
+                    }`,
+                  }}
+                >
+                  <Image
+                    alt="Decoras"
+                    src={item.img}
+                    layout="fixed"
+                    objectFit="contain"
+                    height={200}
+                    width={180}
+                  />
 
-                <div className="our__collection__card__name">
-                  <p>{item?.sub_category}</p>
-                  <p>{item?.code}</p>
+                  <div className="our__collection__card__name">
+                    <p>{item?.sub_category}</p>
+                    <p>{item?.code}</p>
+                  </div>
+
+                  <p>{item?.category}</p>
                 </div>
-
-                <p>{item?.category}</p>
-              </div>
-            </SwiperSlide>
-          );
-        })}
+              </SwiperSlide>
+            );
+          })}
 
         <div onClick={handlePrev} className="collection__carousal__arrow__left">
           <BsArrowLeft color="#6c6c6c" style={{ fontSize: 20 }} />
@@ -106,7 +108,7 @@ function Collections() {
         >
           <BsArrowRight color="#6c6c6c" style={{ fontSize: 20 }} />
         </div>
-      </Swiper> */}
+      </Swiper>
 
       <div className="our__collection__mob_btn">
         <Button title={"View All"} place={"collection"} />
