@@ -30,8 +30,16 @@ const Banner = ({ name, img }) => {
   }, [name]);
 
   return (
-    <div className="bannerCollection">
-      <div className="bannerCollectionImage">
+    <div
+      className="bannerCollection"
+      style={{
+        backgroundImage: `url(${img?.src})`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "contain",
+      }}
+    >
+      {/* <div className="bannerCollectionImage">
         <Image
           src={img?.src}
           layout="fixed"
@@ -39,7 +47,7 @@ const Banner = ({ name, img }) => {
           height={430}
           width={1248}
         />
-      </div>
+      </div> */}
 
       <h1 className="animation__title">{name}</h1>
     </div>
