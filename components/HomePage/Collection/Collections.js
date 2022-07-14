@@ -14,7 +14,7 @@ function Collections() {
 
   useEffect(() => {
     const shuffledArray = shuffleArray(ProductData);
-    setShuffle(shuffledArray);
+    setShuffle([...shuffledArray]);
   }, []);
 
   const sliderRef = useRef(null);
@@ -39,6 +39,8 @@ function Collections() {
     "#F9F6F1",
   ];
 
+  console.log(shuffle);
+
   return (
     <div className="our__collection__container">
       <div className="our__collection__top__bar">
@@ -54,7 +56,7 @@ function Collections() {
         </div>
       </div>
 
-      <Swiper
+      {/* <Swiper
         ref={sliderRef}
         spaceBetween={40}
         slidesPerView={"auto"}
@@ -94,7 +96,7 @@ function Collections() {
             </SwiperSlide>
           );
         })}
-        <div />
+
         <div onClick={handlePrev} className="collection__carousal__arrow__left">
           <BsArrowLeft color="#6c6c6c" style={{ fontSize: 20 }} />
         </div>
@@ -104,7 +106,7 @@ function Collections() {
         >
           <BsArrowRight color="#6c6c6c" style={{ fontSize: 20 }} />
         </div>
-      </Swiper>
+      </Swiper> */}
 
       <div className="our__collection__mob_btn">
         <Button title={"View All"} place={"collection"} />
