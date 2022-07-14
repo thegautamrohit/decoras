@@ -1,7 +1,7 @@
 .our__collection__container {
   /* border: 1px solid red; */
   width: 100%;
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .our__collection__top__bar {
@@ -12,7 +12,7 @@
 }
 
 .our__collection__top__bar__head {
-  margin: 0 0 40px 0;
+  margin: 0 0 60px 0;
 }
 
 .our__collection__top__bar__head > h1 {

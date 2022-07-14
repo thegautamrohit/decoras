@@ -52,9 +52,9 @@ function Collections() {
             internationally recognized designers.
           </p>
         </div>
-        <div className="our__collection__desk_btn">
+        {/* <div className="our__collection__desk_btn">
           <Button title={"View All"} place={"our-collection"} />
-        </div>
+        </div> */}
       </div>
 
       <Swiper
@@ -108,9 +108,9 @@ function Collections() {
         </div>
       </Swiper>
 
-      <div className="our__collection__mob_btn">
+      {/* <div className="our__collection__mob_btn">
         <Button title={"View All"} place={"collection"} />
-      </div>
+      </div> */}
     </div>
   );
 }
