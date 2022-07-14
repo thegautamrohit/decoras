@@ -53,7 +53,7 @@ function Collections() {
           </p>
         </div>
         <div className="our__collection__desk_btn">
-          <Button title={"View All"} place={"collection"} />
+          <Button title={"View All"} place={"our-collection"} />
         </div>
       </div>
 

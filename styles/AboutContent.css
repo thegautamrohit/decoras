@@ -89,6 +89,15 @@
   display: none;
 }
 
+.about__page__image {
+  width: 100%;
+  background-image: url("../Assets/misc/aboutPage.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  height: 600px;
+}
+
 @media screen and (max-width: 768px) {
   .about__content__space__container {
     flex-direction: column;

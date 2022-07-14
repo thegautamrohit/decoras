@@ -1,54 +1,24 @@
-import Image from "next/image";
-import About1 from "../../Assets/Banner/desktop_banner/banner5.png";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function AboutContent() {
+  const [offsetY, setOffsetY] = useState(0);
+
+  const offSet = () => setOffsetY(window.scrollY);
+
+  useEffect(() => {
+    window.addEventListener("scroll", offSet);
+
+    return () => window.removeEventListener("scroll", offSet);
+  }, []);
   return (
     <>
       {/* <h1 className="about__content__head__text">CREATE A SPACE YOU LOVE</h1> */}
       <div className="about__content__space__container">
-        <div className="about__content__image__bar">
-          <div className="about_content__image__sub_1">
-            <div className="about__content__image__part_1">
-              <Image
-                alt="Decoras"
-                src={About1}
-                width={327}
-                height={254}
-                layout="intrinsic"
-              />
-            </div>
-            <div className="about__content__image__part_2">
-              <Image
-                alt="Decoras"
-                src={About1}
-                width={251}
-                height={160}
-                layout="intrinsic"
-              />
-            </div>
-          </div>
-          <div className="about_content__image__sub_2">
-            <div className="about__content__image__part_3">
-              <Image
-                alt="Decoras"
-                src={About1}
-                width={251}
-                height={169}
-                layout="intrinsic"
-              />
-            </div>
-
-            <div className="about__content__image__part_4">
-              <Image
-                alt="Decoras"
-                src={About1}
-                width={327}
-                height={263}
-                layout="intrinsic"
-              />
-            </div>
-          </div>
+        <div className="about__mono__slab__image__container">
+          <div
+            className="about__page__image"
+            style={{ transform: `translateY(${offsetY * 0.2 - 40}px)` }}
+          ></div>
         </div>
 
         <div className="about__content__space__text">

@@ -24,7 +24,7 @@ function AboutSection() {
             We are fueled by passion for design and a desire to help others
             create a space they love.
           </p>
-          <Button title="Read More" />
+          <Button title="Read More" place={"about"} />
         </div>
         <div className="about__mono__slab__image__container">
           <div
