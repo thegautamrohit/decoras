@@ -42,7 +42,7 @@ function Header({ children, href }) {
                 Home
               </a>
             </Link>
-            <Link href="/our-collection">
+            < href="/our-collection">
               <a
                 className="header_drop_down_menu"
                 style={
@@ -53,11 +53,11 @@ function Header({ children, href }) {
               >
                 Our Collection
                 <div className="header__drop__down__categories">
-                  <Link href="our-collection?category=Furnishing">
+                  <Link href="/our-collection?category=Furnishing">
                     <a className="header__drop__down__category">Furnishing</a>
                   </Link>
 
-                  <Link href="our-collection?category=Bags_and_Stationery">
+                  {/* <Link href="our-collection?category=Bags_and_Stationery">
                     <a className="header__drop__down__category">
                       Bags and Stationery
                     </a>
@@ -81,7 +81,7 @@ function Header({ children, href }) {
                     <a className="header__drop__down__category">
                       Floor Covering
                     </a>
-                  </Link>
+                  </Link> */}
                 </div>
               </a>
             </Link>
