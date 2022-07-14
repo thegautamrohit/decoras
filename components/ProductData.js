@@ -29,7 +29,7 @@ import Decor9 from "../Assets/Cut outs/Decoras images cut out/Decor/Bathroom acc
 import Decor10 from "../Assets/Cut outs/Decoras images cut out/Decor/Bathroom accessories/BR4010.png";
 import Decor11 from "../Assets/Cut outs/Decoras images cut out/Decor/Door Knobs/DK1001.png";
 import Decor12 from "../Assets/Cut outs/Decoras images cut out/Decor/Door Knobs/DK1002.png";
-import Decor13 from "../Assets/Cut outs/Decoras images cut out/Decor/Door Knobs/DK1003.png";
+// import Decor13 from "../Assets/Cut outs/Decoras images cut out/Decor/Door Knobs/DK1003.png";
 import Decor14 from "../Assets/Cut outs/Decoras images cut out/Decor/Door Knobs/DK1004.png";
 import Decor15 from "../Assets/Cut outs/Decoras images cut out/Decor/Door Knobs/DK1005.png";
 import Decor16 from "../Assets/Cut outs/Decoras images cut out/Decor/Door Knobs/DK1006.png";
@@ -175,19 +175,19 @@ import Furnishing65 from "../Assets/Cut outs/Decoras images cut out/furnishing/p
 import Furnishing66 from "../Assets/Cut outs/Decoras images cut out/furnishing/pet cutout/PT2108-removebg-preview.png";
 import Furnishing67 from "../Assets/Cut outs/Decoras images cut out/furnishing/pet cutout/PT2109-removebg-preview.png";
 import Table_linens_cutout1 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Coasters cutout/TL9024-removebg-preview.png";
-import Table_linens_cutout2 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Coasters cutout/TL9025-removebg-preview.png";
+// import Table_linens_cutout2 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Coasters cutout/TL9025-removebg-preview.png";
 import Table_linens_cutout3 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Napkin _ Rings cutout/TL9004-removebg-preview.png";
 import Table_linens_cutout4 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Napkin _ Rings cutout/TL9005-removebg-preview (1).png";
 import Table_linens_cutout5 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Napkin _ Rings cutout/TL9006.jpg";
 import Table_linens_cutout6 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Napkin _ Rings cutout/TL9016.jpg";
-import Table_linens_cutout7 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Napkin _ Rings cutout/TL9025.jpg";
+// import Table_linens_cutout7 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Napkin _ Rings cutout/TL9025.jpg";
 import Table_linens_cutout8 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Napkin _ Rings cutout/TL9026-removebg-preview.png";
 import Table_linens_cutout9 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Placemat cutout/TL9008-removebg-preview.png";
 import Table_linens_cutout10 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Placemat cutout/TL9009-removebg-preview.png";
 import Table_linens_cutout11 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Placemat cutout/TL9010-removebg-preview.png";
 import Table_linens_cutout12 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Placemat cutout/TL9023-removebg-preview.png";
 import Table_linens_cutout13 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Placemat cutout/TL9026-removebg-preview.png";
-import Table_linens_cutout14 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Placemat cutout/TL9027-removebg-preview.png";
+// import Table_linens_cutout14 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Placemat cutout/TL9027-removebg-preview.png";
 import Table_linens_cutout15 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Table runners cutout/TL9003.jpg";
 import Table_linens_cutout16 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Table runners cutout/TL90120.jpg";
 import Table_linens_cutout17 from "../Assets/Cut outs/Decoras images cut out/furnishing/table linens cutout/Table runners cutout/TL90127.jpg";
@@ -224,12 +224,12 @@ import Living19 from "../Assets/Cut outs/Decoras images cut out/living/Cabinet _
 import Living20 from "../Assets/Cut outs/Decoras images cut out/living/Cabinet _ drawers cutout/CD402-removebg-preview.png";
 import Living21 from "../Assets/Cut outs/Decoras images cut out/living/Cabinet _ drawers cutout/CD403-removebg-preview.png";
 import Living22 from "../Assets/Cut outs/Decoras images cut out/living/Cabinet _ drawers cutout/CD404-removebg-preview.png";
-import Living23 from "../Assets/Cut outs/Decoras images cut out/living/Cabinet _ drawers cutout/CD405-removebg-preview.png";
+// import Living23 from "../Assets/Cut outs/Decoras images cut out/living/Cabinet _ drawers cutout/CD405-removebg-preview.png";
 import Living24 from "../Assets/Cut outs/Decoras images cut out/living/Cabinet _ drawers cutout/CD406-removebg-preview.png";
 import Living25 from "../Assets/Cut outs/Decoras images cut out/living/Cabinet _ drawers cutout/CD407-removebg-preview.png";
 import Living26 from "../Assets/Cut outs/Decoras images cut out/living/Cabinet _ drawers cutout/CD408-removebg-preview.png";
 import Living27 from "../Assets/Cut outs/Decoras images cut out/living/Cabinet _ drawers cutout/CD409-removebg-preview (1).png";
-import Living28 from "../Assets/Cut outs/Decoras images cut out/living/Cabinet _ drawers cutout/CD410-removebg-preview.png";
+// import Living28 from "../Assets/Cut outs/Decoras images cut out/living/Cabinet _ drawers cutout/CD410-removebg-preview.png";
 import Living29 from "../Assets/Cut outs/Decoras images cut out/living/Consoles cutout/WC501-removebg-preview.png";
 import Living30 from "../Assets/Cut outs/Decoras images cut out/living/Consoles cutout/WC502-removebg-preview.png";
 import Living31 from "../Assets/Cut outs/Decoras images cut out/living/Consoles cutout/WC504-removebg-preview.png";
@@ -253,9 +253,9 @@ import Living48 from "../Assets/Cut outs/Decoras images cut out/living/Side tabl
 import Living49 from "../Assets/Cut outs/Decoras images cut out/living/Side table cutout/ST704-removebg-preview.png";
 import Living50 from "../Assets/Cut outs/Decoras images cut out/living/Sofa cutout/SF301-removebg-preview.png";
 import Living51 from "../Assets/Cut outs/Decoras images cut out/living/Sofa cutout/SF302-removebg-preview.png";
-import Living52 from "../Assets/Cut outs/Decoras images cut out/living/Sofa cutout/SF303-removebg-preview.png";
+// import Living52 from "../Assets/Cut outs/Decoras images cut out/living/Sofa cutout/SF303-removebg-preview.png";
 import Living53 from "../Assets/Cut outs/Decoras images cut out/living/Sofa cutout/SF304-removebg-preview.png";
-import Living54 from "../Assets/Cut outs/Decoras images cut out/living/Sofa cutout/SF305-removebg-preview.png";
+// import Living54 from "../Assets/Cut outs/Decoras images cut out/living/Sofa cutout/SF305-removebg-preview.png";
 import Living55 from "../Assets/Cut outs/Decoras images cut out/living/Sofa cutout/SF306-removebg-preview.png";
 import Living56 from "../Assets/Cut outs/Decoras images cut out/living/Sofa cutout/SF307-removebg-preview.png";
 import Living57 from "../Assets/Cut outs/Decoras images cut out/living/Sofa cutout/SF308-removebg-preview.png";
@@ -490,13 +490,13 @@ export const ProductData = [
     sub_category: "Door Knobs",
     category: "Decor",
   },
-  {
-    id: 32,
-    code: "DK1003",
-    img: Decor13,
-    sub_category: "Door Knobs",
-    category: "Decor",
-  },
+  // {
+  //   id: 32,
+  //   code: "DK1003",
+  //   img: Decor13,
+  //   sub_category: "Door Knobs",
+  //   category: "Decor",
+  // },
   {
     id: 33,
     code: "DK1004",
@@ -1512,13 +1512,13 @@ export const ProductData = [
     sub_category: "Coasters",
     category: "table linens",
   },
-  {
-    id: 178,
-    code: "TL9025",
-    img: Table_linens_cutout2,
-    sub_category: "Coasters",
-    category: "table linens",
-  },
+  // {
+  //   id: 178,
+  //   code: "TL9025",
+  //   img: Table_linens_cutout2,
+  //   sub_category: "Coasters",
+  //   category: "table linens",
+  // },
   {
     id: 179,
     code: "TL9004",
@@ -1547,13 +1547,13 @@ export const ProductData = [
     sub_category: "Napkin _ Rings",
     category: "table linens",
   },
-  {
-    id: 183,
-    code: "TL9025",
-    img: Table_linens_cutout7,
-    sub_category: "Napkin _ Rings",
-    category: "table linens",
-  },
+  // {
+  //   id: 183,
+  //   code: "TL9025",
+  //   img: Table_linens_cutout7,
+  //   sub_category: "Napkin _ Rings",
+  //   category: "table linens",
+  // },
   {
     id: 184,
     code: "TL9026",
@@ -1596,13 +1596,13 @@ export const ProductData = [
     sub_category: "Placemat",
     category: "table linens",
   },
-  {
-    id: 190,
-    code: "TL9027",
-    img: Table_linens_cutout14,
-    sub_category: "Placemat",
-    category: "table linens",
-  },
+  // {
+  //   id: 190,
+  //   code: "TL9027",
+  //   img: Table_linens_cutout14,
+  //   sub_category: "Placemat",
+  //   category: "table linens",
+  // },
   {
     id: 191,
     code: "TL9003",
@@ -1855,13 +1855,13 @@ export const ProductData = [
     sub_category: "Cabinet _ drawers",
     category: "living",
   },
-  {
-    id: 227,
-    code: "CD405",
-    img: Living23,
-    sub_category: "Cabinet _ drawers",
-    category: "living",
-  },
+  // {
+  //   id: 227,
+  //   code: "CD405",
+  //   img: Living23,
+  //   sub_category: "Cabinet _ drawers",
+  //   category: "living",
+  // },
   {
     id: 228,
     code: "CD406",
@@ -1890,13 +1890,13 @@ export const ProductData = [
     sub_category: "Cabinet _ drawers",
     category: "living",
   },
-  {
-    id: 232,
-    code: "CD410",
-    img: Living28,
-    sub_category: "Cabinet _ drawers",
-    category: "living",
-  },
+  // {
+  //   id: 232,
+  //   code: "CD410",
+  //   img: Living28,
+  //   sub_category: "Cabinet _ drawers",
+  //   category: "living",
+  // },
   {
     id: 233,
     code: "WC501",
@@ -2058,13 +2058,13 @@ export const ProductData = [
     sub_category: "Sofa",
     category: "living",
   },
-  {
-    id: 256,
-    code: "SF303",
-    img: Living52,
-    sub_category: "Sofa",
-    category: "living",
-  },
+  // {
+  //   id: 256,
+  //   code: "SF303",
+  //   img: Living52,
+  //   sub_category: "Sofa",
+  //   category: "living",
+  // },
   {
     id: 257,
     code: "SF304",
@@ -2072,13 +2072,13 @@ export const ProductData = [
     sub_category: "Sofa",
     category: "living",
   },
-  {
-    id: 258,
-    code: "SF305",
-    img: Living54,
-    sub_category: "Sofa",
-    category: "living",
-  },
+  // {
+  //   id: 258,
+  //   code: "SF305",
+  //   img: Living54,
+  //   sub_category: "Sofa",
+  //   category: "living",
+  // },
   {
     id: 259,
     code: "SF306",
