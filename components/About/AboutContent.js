@@ -25,7 +25,7 @@ function AboutContent() {
           <h1>CREATE A SPACE YOU LOVE</h1>
           <p>
             Decoras is a state of the art home decor brand which is built on the
-            pillars of luxury, e’lan, elegance and class. Our products enchant
+            pillars of luxury, élan, elegance and class. Our products enchant
             for their sobriety, to last for generations, faithful to the shapes
             of each period, with a touch of the present.
           </p>

@@ -243,7 +243,7 @@ function Header({ children, href }) {
                   : "header_mob_link"
               }
             >
-              About
+              About Us
             </a>
           </Link>
           <Link href="/contact">
@@ -254,7 +254,7 @@ function Header({ children, href }) {
                   : "header_mob_link"
               }
             >
-              Contact
+              Contact Us
             </a>
           </Link>
         </div>
