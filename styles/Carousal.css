@@ -58,6 +58,38 @@
 @media screen and (min-width: 1920px) {
   .banner__carousal__arrow__right {
     right: 9.5% !important;
+
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+
+    cursor: pointer;
+    border: 2px solid #6c6c6c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .banner__carousal__arrow__left {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    left: -1.19%;
+    cursor: pointer;
+    border: 2px solid #6c6c6c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.5);
   }
   .whole__carousal > .swiper-pagination-bullets {
     bottom: 2vw !important;
