@@ -28,9 +28,6 @@ function Header({ children, href }) {
   };
 
   const expandHandler = (e) => {
-    // "header_mob_link_active"
-    //               : "header_mob_link"
-    // console.log(e.target.classList.value);
     setExpand(!expand);
   };
 
@@ -54,7 +51,7 @@ function Header({ children, href }) {
             <div
               className="header_drop_down_menu"
               style={
-                router.asPath === "/our-collection"
+                router.asPath.includes("our-collection")
                   ? { color: "var(--black)", fontWeight: "600" }
                   : { color: "var(--grey)", textDecoration: "none" }
               }
@@ -190,7 +187,7 @@ function Header({ children, href }) {
           <div onClick={(e) => expandHandler(e)}>
             <div
               className={
-                router.asPath === "/our-collection"
+                router.asPath.includes("our-collection")
                   ? "header_mob_link_active"
                   : "header_mob_link"
               }
