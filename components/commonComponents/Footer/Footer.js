@@ -51,7 +51,7 @@ function Footer() {
                 Home
               </a>
             </Link>
-            <Link href="/our-collection">
+            {/* <Link href="/our-collection">
               <a
                 className={
                   router.asPath.includes("our-collection")
@@ -61,7 +61,7 @@ function Footer() {
               >
                 Our Collection
               </a>
-            </Link>
+            </Link> */}
             <Link href="/about">
               <a
                 className={
