@@ -12,7 +12,7 @@
 
   .about__mono__slab__image__container__desktop {
     width: 50%;
-    height: 400px;
+    height: 415px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -56,24 +56,29 @@
     width: 100%;
   }
 
-  .about__mono__slab__content_1__desktop {
+  /* .about__mono__slab__content_1__desktop {
     margin-left: 96px;
-  }
+  } */
 
   .about__mono__slab__content_2__desktop {
     /* margin-right: 96px; */
     margin: auto;
+    margin-left: 0px;
+  }
+
+  .about__mono__slab__content_1__desktop > a {
+    margin-left: 100px;
   }
 
   .about__mono__slab__content_1__desktop > h1,
   .about__mono__slab__content_2__desktop > h1 {
-    margin: 0 0 24px 0;
+    margin: 0 0 24px 100px;
     text-transform: uppercase;
   }
 
   .about__mono__slab__content_1__desktop > p,
   .about__mono__slab__content_2__desktop > p {
-    margin: 0 0 38px 0;
+    margin: 0 0 38px 100px;
     color: var(--grey);
     line-height: 1.6;
   }

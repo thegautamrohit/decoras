@@ -83,7 +83,7 @@ function AboutSection() {
           <div className="about__mono__slab__image__container__desktop">
             <div
               className="about__mono__slab__image_2__desktop"
-              style={{ transform: `translateY(${offsetY * 0.2 - 280}px)` }}
+              style={{ transform: `translateY(${offsetY * 0.2 - 380}px)` }}
             ></div>
           </div>
         </div>
