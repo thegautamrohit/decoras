@@ -36,7 +36,7 @@ const Banner = ({ name }) => {
     },
     {
       id: 5,
-      name: "Kitchen_Linens",
+      name: "Kitchen_Linen",
       image: Kitchen_Linens,
     },
     {
@@ -46,7 +46,7 @@ const Banner = ({ name }) => {
     },
     {
       id: 7,
-      name: "Table_Linens",
+      name: "Table_Linen",
       image: Table_Linens,
     },
   ];

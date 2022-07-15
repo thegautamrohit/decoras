@@ -68,11 +68,11 @@ function Header({ children, href }) {
                   </a>
                 </Link>
 
-                <Link href="/our-collection/Table_Linens">
+                <Link href="/our-collection/Table_Linen">
                   <a className="header__drop__down__category">Table Linens</a>
                 </Link>
 
-                <Link href="/our-collection/Kitchen_Linens">
+                <Link href="/our-collection/Kitchen_Linen">
                   <a className="header__drop__down__category">Kitchen Linens</a>
                 </Link>
 
@@ -207,13 +207,13 @@ function Header({ children, href }) {
                   </a>
                 </Link>
 
-                <Link href="/our-collection/Table_Linens">
+                <Link href="/our-collection/Table_Linen">
                   <a className="header__drop__down__category_mob">
                     Table Linens
                   </a>
                 </Link>
 
-                <Link href="/our-collection/Kitchen_Linens">
+                <Link href="/our-collection/Kitchen_Linen">
                   <a className="header__drop__down__category_mob">
                     Kitchen Linens
                   </a>
