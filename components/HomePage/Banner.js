@@ -15,9 +15,9 @@ import BannerMobile5 from "../../Assets/Banner/mobile_banners/banner5.png";
 import BannerMobile6 from "../../Assets/Banner/mobile_banners/banner6.png";
 import BannerMobile7 from "../../Assets/Banner/mobile_banners/banner7.png";
 import Image from "next/image";
-import SwiperCore, { Navigation, Pagination } from "swiper";
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Autoplay]);
 const dataDesktop = [
   {
     id: 1,
@@ -105,6 +105,10 @@ const Banner = () => {
           }}
           modules={[Pagination]}
           className="whole__carousal"
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
         >
           {dataDesktop?.map((item) => {
             return (
@@ -133,6 +137,10 @@ const Banner = () => {
           loop={true}
           pagination={{
             clickable: true,
+          }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
           }}
           modules={[Pagination]}
           className="whole__carousal"
