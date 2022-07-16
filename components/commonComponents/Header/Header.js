@@ -69,11 +69,11 @@ function Header({ children, href }) {
                 </Link>
 
                 <Link href="/our-collection/Table_Linen">
-                  <a className="header__drop__down__category">Table Linens</a>
+                  <a className="header__drop__down__category">Table Linen</a>
                 </Link>
 
                 <Link href="/our-collection/Kitchen_Linen">
-                  <a className="header__drop__down__category">Kitchen Linens</a>
+                  <a className="header__drop__down__category">Kitchen Linen</a>
                 </Link>
 
                 <Link href="/our-collection/Decor">
