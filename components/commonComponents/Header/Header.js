@@ -209,13 +209,13 @@ function Header({ children, href }) {
 
                 <Link href="/our-collection/Table_Linen">
                   <a className="header__drop__down__category_mob">
-                    Table Linens
+                    Table Linen
                   </a>
                 </Link>
 
                 <Link href="/our-collection/Kitchen_Linen">
                   <a className="header__drop__down__category_mob">
-                    Kitchen Linens
+                    Kitchen Linen
                   </a>
                 </Link>
 
